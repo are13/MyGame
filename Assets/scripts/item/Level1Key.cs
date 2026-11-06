@@ -12,8 +12,30 @@ public class Level1Key : Item, IUsable
         
         if(user is Player player)
         {
-            
-            player.addItem(new ItemStack(Items.ICED_FROG,60));
+            var temp = InfoText.generate();
+            temp.color = Color.green;
+            temp.text = "You win!";
+            player.infoText.addInfo(temp);
+
+            var temp1 = InfoText.generate();
+            temp1.color = Color.blue;
+            temp1.text = "Next level is coming...";
+            player.infoText.addInfo(temp1);
+
+            var temp2 = InfoText.generate();
+            temp2.color = Color.blue;
+            temp2.text = "w";
+            player.infoText.addInfo(temp2);
+
+            var temp3 = InfoText.generate();
+            temp3.color = Color.blue;
+            temp3.text = "Next level is coming...";
+            player.infoText.addInfo(temp3);
+
+            var temp4 = InfoText.generate();
+            temp4.color = Color.blue;
+            temp4.text = "Next level is coming...";
+            player.infoText.addInfo(temp4);
         }
     }
 }

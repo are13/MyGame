@@ -20,6 +20,7 @@ public class Player : LivingEntity
     public TextMeshProUGUI attackText;
     public int lookingOptions = 0;
     public Prompt prompt;
+    public InfoText infoText;
     List<ItemStack> inventory;
     int idxSelected = 0;
     float chargeTimer;
