@@ -1,0 +1,2067 @@
+fileFormatVersion: 2
+guid: 1ea2b1e189045824795e021ae0f2c97d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8488944267436611069
+    second: Cirno_0
+  - first:
+      213: -641881354450916193
+    second: Cirno_1
+  - first:
+      213: 383986478549704903
+    second: Cirno_2
+  - first:
+      213: -958850207573068466
+    second: Cirno_3
+  - first:
+      213: -5712008574379480224
+    second: Cirno_4
+  - first:
+      213: 5900762861826493483
+    second: Cirno_5
+  - first:
+      213: -2977179070816742103
+    second: Cirno_6
+  - first:
+      213: -401175357819509841
+    second: Cirno_7
+  - first:
+      213: 7101494622927567259
+    second: Cirno_8
+  - first:
+      213: -7722580891433369786
+    second: Cirno_9
+  - first:
+      213: 8526459922922914894
+    second: Cirno_10
+  - first:
+      213: -610724949793400131
+    second: Cirno_11
+  - first:
+      213: -4467153080176907354
+    second: Cirno_12
+  - first:
+      213: -4855456814049402575
+    second: Cirno_13
+  - first:
+      213: 5059779042347855541
+    second: Cirno_14
+  - first:
+      213: -6566765668128020982
+    second: Cirno_15
+  - first:
+      213: -7764601054717117273
+    second: Cirno_16
+  - first:
+      213: 7863818579446789405
+    second: Cirno_17
+  - first:
+      213: -4219637153883116578
+    second: Cirno_18
+  - first:
+      213: 665762818326868848
+    second: Cirno_19
+  - first:
+      213: -2506712669055085944
+    second: Cirno_20
+  - first:
+      213: -3232907580979981684
+    second: Cirno_21
+  - first:
+      213: 2140787305093385338
+    second: Cirno_22
+  - first:
+      213: 2067287148497844424
+    second: Cirno_23
+  - first:
+      213: -9189008994255164302
+    second: Cirno_24
+  - first:
+      213: 8455454770955058996
+    second: Cirno_25
+  - first:
+      213: 6707136847499371422
+    second: Cirno_26
+  - first:
+      213: -2545169007055602949
+    second: Cirno_27
+  - first:
+      213: 3166901749737804474
+    second: Cirno_28
+  - first:
+      213: -348118833429448351
+    second: Cirno_29
+  - first:
+      213: -7749520214021723367
+    second: Cirno_30
+  - first:
+      213: -7426870111939827679
+    second: Cirno_31
+  - first:
+      213: -4043165329393712681
+    second: Cirno_32
+  - first:
+      213: -6116291411477537739
+    second: Cirno_33
+  - first:
+      213: 3724323967703241428
+    second: Cirno_34
+  - first:
+      213: -5513988179492083883
+    second: Cirno_35
+  - first:
+      213: -2264801567039857916
+    second: Cirno_36
+  - first:
+      213: 3455494977041566060
+    second: Cirno_37
+  - first:
+      213: -722197721412054580
+    second: Cirno_38
+  - first:
+      213: -6196995694192047466
+    second: Cirno_39
+  - first:
+      213: -1246187550743017076
+    second: Cirno_40
+  - first:
+      213: 8525117664716597234
+    second: Cirno_41
+  - first:
+      213: 6235998216182351095
+    second: Cirno_42
+  - first:
+      213: -2421023648825872
+    second: Cirno_43
+  - first:
+      213: -8217245865439150566
+    second: Cirno_44
+  - first:
+      213: -6418191110937504900
+    second: Cirno_45
+  - first:
+      213: 2108265459138831985
+    second: Cirno_46
+  - first:
+      213: -486586600311020176
+    second: Cirno_47
+  - first:
+      213: 7992114624589068447
+    second: Cirno_48
+  - first:
+      213: -5661920892584704756
+    second: Cirno_49
+  - first:
+      213: -2480735532770406988
+    second: Cirno_50
+  - first:
+      213: 9203820095196602900
+    second: Cirno_51
+  - first:
+      213: 1858073556385568843
+    second: Cirno_52
+  - first:
+      213: -3586245457880042536
+    second: Cirno_53
+  - first:
+      213: 3713844682193228029
+    second: Cirno_54
+  - first:
+      213: 2385841496234335545
+    second: Cirno_55
+  - first:
+      213: 8982486964521638461
+    second: Cirno_56
+  - first:
+      213: 6657932061228581302
+    second: Cirno_57
+  - first:
+      213: -7119163571824348373
+    second: Cirno_58
+  - first:
+      213: -4558337764367509867
+    second: Cirno_59
+  - first:
+      213: 9214797382128155516
+    second: Cirno_60
+  - first:
+      213: 3801937709850339756
+    second: Cirno_61
+  - first:
+      213: 5899789509415122565
+    second: Cirno_62
+  - first:
+      213: -9151709553447757105
+    second: Cirno_63
+  - first:
+      213: 9083157545181990011
+    second: Cirno_64
+  - first:
+      213: 6798500717621588252
+    second: Cirno_65
+  - first:
+      213: 7248750793055526303
+    second: Cirno_66
+  - first:
+      213: 2891813855031859427
+    second: Cirno_67
+  - first:
+      213: 7716426167687608643
+    second: Cirno_68
+  - first:
+      213: -7151018321529460032
+    second: Cirno_69
+  - first:
+      213: 9078414435276448990
+    second: Cirno_70
+  - first:
+      213: 6350525211600295552
+    second: Cirno_71
+  - first:
+      213: 6287676468837648069
+    second: Cirno_72
+  - first:
+      213: -2460023620616594904
+    second: Cirno_73
+  - first:
+      213: -6096504460662354673
+    second: Cirno_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cirno_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 230
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5d5aab5d9cec570800000000000000
+      internalID: 8488944267436611069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 225
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ca1081f449717f0800000000000000
+      internalID: -641881354450916193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 230
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c02284faa1345500800000000000000
+      internalID: 383986478549704903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 225
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e453cc001da71b2f0800000000000000
+      internalID: -958850207573068466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_4
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 225
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b2022177edab0b0800000000000000
+      internalID: -5712008574379480224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 225
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c4cfa2f88b3e150800000000000000
+      internalID: 5900762861826493483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 225
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9259d3ba86feea6d0800000000000000
+      internalID: -2977179070816742103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_7
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 225
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa32788332dbe6af0800000000000000
+      internalID: -401175357819509841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_8
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 225
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99b1f5fbb39d8260800000000000000
+      internalID: 7101494622927567259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_9
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 225
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ff4e06891e3d490800000000000000
+      internalID: -7722580891433369786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 225
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44cc61ff12145670800000000000000
+      internalID: 8526459922922914894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 193
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba9818d4e44687f0800000000000000
+      internalID: -610724949793400131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_12
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 193
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab63ca01fb7102c0800000000000000
+      internalID: -4467153080176907354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 193
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131e550c0c3fd9cb0800000000000000
+      internalID: -4855456814049402575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_14
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 193
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be2c1d2b32f73640800000000000000
+      internalID: 5059779042347855541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 193
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06aff3ca692ed4a0800000000000000
+      internalID: -6566765668128020982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 193
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ac76f6ba789e3490800000000000000
+      internalID: -7764601054717117273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 193
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15fa0e6555e12d60800000000000000
+      internalID: 7863818579446789405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_18
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 193
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edba1c97d56d075c0800000000000000
+      internalID: -4219637153883116578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 161
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073390381c34d3900800000000000000
+      internalID: 665762818326868848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 161
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882100fcb1e563dd0800000000000000
+      internalID: -2506712669055085944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 161
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82550c0fa76223d0800000000000000
+      internalID: -3232907580979981684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_22
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 161
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cc1cb26ba95bd10800000000000000
+      internalID: 2140787305093385338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_23
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 165
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8b1f665ba70bc10800000000000000
+      internalID: 2067287148497844424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_24
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 161
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c2d8351051a7080800000000000000
+      internalID: -9189008994255164302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_25
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 161
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f7825b05fc75570800000000000000
+      internalID: 8455454770955058996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_26
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 161
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9322274d69841d50800000000000000
+      internalID: 6707136847499371422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 160
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfafd11e54ebdacd0800000000000000
+      internalID: -2545169007055602949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_28
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 134
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab25fa7cc5813fb20800000000000000
+      internalID: 3166901749737804474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 129
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16970d1f3cb3b2bf0800000000000000
+      internalID: -348118833429448351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_30
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 134
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ba68f8c6c247490800000000000000
+      internalID: -7749520214021723367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 129
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1286cd08bf47ee890800000000000000
+      internalID: -7426870111939827679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_32
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 129
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d10055fd8ac3e7c0800000000000000
+      internalID: -4043165329393712681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 129
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cdb14ed519e1ba0800000000000000
+      internalID: -6116291411477537739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_34
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 129
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2dc639ae47fa330800000000000000
+      internalID: 3724323967703241428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_35
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 129
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557eba117f06a73b0800000000000000
+      internalID: -5513988179492083883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_36
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 129
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b57d569fec190e0800000000000000
+      internalID: -2264801567039857916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 129
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6985b5af5264ff20800000000000000
+      internalID: 3455494977041566060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_38
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 102
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc153adaffc3af5f0800000000000000
+      internalID: -722197721412054580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_39
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 97
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ace0dcf39dff9a0800000000000000
+      internalID: -6196995694192047466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_40
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 102
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89c2727607a4bee0800000000000000
+      internalID: -1246187550743017076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_41
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 97
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f727d9195d4f4670800000000000000
+      internalID: 8525117664716597234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_42
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 97
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4c48f7657ba8650800000000000000
+      internalID: 6235998216182351095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_43
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 97
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd3b61871667fff0800000000000000
+      internalID: -2421023648825872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_44
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 97
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1eb3761c6a76fd80800000000000000
+      internalID: -8217245865439150566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_45
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 97
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73100c80310ee6a0800000000000000
+      internalID: -6418191110937504900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_46
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 97
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1762238d340124d10800000000000000
+      internalID: 2108265459138831985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_47
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 97
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0752ff7a01c4f39f0800000000000000
+      internalID: -486586600311020176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 70
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98f5d238e1b9ee60800000000000000
+      internalID: 7992114624589068447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_49
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 65
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05402342f0dc61b0800000000000000
+      internalID: -5661920892584704756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_50
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 70
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bdc78b2d28a29dd0800000000000000
+      internalID: -2480735532770406988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_51
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 65
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412abc6dc998abf70800000000000000
+      internalID: 9203820095196602900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_52
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 65
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4898e61e0439c910800000000000000
+      internalID: 1858073556385568843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_53
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 65
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3b3bdb1c81b3ec0800000000000000
+      internalID: -3586245457880042536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 65
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0d919cf0a3a8330800000000000000
+      internalID: 3713844682193228029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_55
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 65
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d1f6933363c1120800000000000000
+      internalID: 2385841496234335545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_56
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 65
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a93ef8d4438ac70800000000000000
+      internalID: 8982486964521638461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_57
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 65
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1c6383fe9b56c50800000000000000
+      internalID: 6657932061228581302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_58
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 33
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23328b4376a33d90800000000000000
+      internalID: -7119163571824348373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_59
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 33
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59650a454f78db0c0800000000000000
+      internalID: -4558337764367509867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_60
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 33
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bb2fe956981ef70800000000000000
+      internalID: 9214797382128155516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_61
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 33
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca9aacd143233c430800000000000000
+      internalID: 3801937709850339756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 37
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586b346ec4340e150800000000000000
+      internalID: 5899789509415122565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_63
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 33
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca923326a89ef080800000000000000
+      internalID: -9151709553447757105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_64
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 33
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c4b77a9abdd0e70800000000000000
+      internalID: 9083157545181990011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_65
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 33
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11b217f160295e50800000000000000
+      internalID: 6798500717621588252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_66
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 32
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9dd765d07cb89460800000000000000
+      internalID: 7248750793055526303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_67
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e81ab13169c12820800000000000000
+      internalID: 2891813855031859427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_68
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3497c8457b0461b60800000000000000
+      internalID: 7716426167687608643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_69
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca2dea69ba72cc90800000000000000
+      internalID: -7151018321529460032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_70
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed46e6254d10dfd70800000000000000
+      internalID: 9078414435276448990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_71
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 086199e8809912850800000000000000
+      internalID: 6350525211600295552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_72
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c686a35f60524750800000000000000
+      internalID: 6287676468837648069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_73
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ad3120d8d3cddd0800000000000000
+      internalID: -2460023620616594904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cirno_74
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0dc2a26e7dd46ba0800000000000000
+      internalID: -6096504460662354673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cirno_0: 8488944267436611069
+      Cirno_1: -641881354450916193
+      Cirno_10: 8526459922922914894
+      Cirno_11: -610724949793400131
+      Cirno_12: -4467153080176907354
+      Cirno_13: -4855456814049402575
+      Cirno_14: 5059779042347855541
+      Cirno_15: -6566765668128020982
+      Cirno_16: -7764601054717117273
+      Cirno_17: 7863818579446789405
+      Cirno_18: -4219637153883116578
+      Cirno_19: 665762818326868848
+      Cirno_2: 383986478549704903
+      Cirno_20: -2506712669055085944
+      Cirno_21: -3232907580979981684
+      Cirno_22: 2140787305093385338
+      Cirno_23: 2067287148497844424
+      Cirno_24: -9189008994255164302
+      Cirno_25: 8455454770955058996
+      Cirno_26: 6707136847499371422
+      Cirno_27: -2545169007055602949
+      Cirno_28: 3166901749737804474
+      Cirno_29: -348118833429448351
+      Cirno_3: -958850207573068466
+      Cirno_30: -7749520214021723367
+      Cirno_31: -7426870111939827679
+      Cirno_32: -4043165329393712681
+      Cirno_33: -6116291411477537739
+      Cirno_34: 3724323967703241428
+      Cirno_35: -5513988179492083883
+      Cirno_36: -2264801567039857916
+      Cirno_37: 3455494977041566060
+      Cirno_38: -722197721412054580
+      Cirno_39: -6196995694192047466
+      Cirno_4: -5712008574379480224
+      Cirno_40: -1246187550743017076
+      Cirno_41: 8525117664716597234
+      Cirno_42: 6235998216182351095
+      Cirno_43: -2421023648825872
+      Cirno_44: -8217245865439150566
+      Cirno_45: -6418191110937504900
+      Cirno_46: 2108265459138831985
+      Cirno_47: -486586600311020176
+      Cirno_48: 7992114624589068447
+      Cirno_49: -5661920892584704756
+      Cirno_5: 5900762861826493483
+      Cirno_50: -2480735532770406988
+      Cirno_51: 9203820095196602900
+      Cirno_52: 1858073556385568843
+      Cirno_53: -3586245457880042536
+      Cirno_54: 3713844682193228029
+      Cirno_55: 2385841496234335545
+      Cirno_56: 8982486964521638461
+      Cirno_57: 6657932061228581302
+      Cirno_58: -7119163571824348373
+      Cirno_59: -4558337764367509867
+      Cirno_6: -2977179070816742103
+      Cirno_60: 9214797382128155516
+      Cirno_61: 3801937709850339756
+      Cirno_62: 5899789509415122565
+      Cirno_63: -9151709553447757105
+      Cirno_64: 9083157545181990011
+      Cirno_65: 6798500717621588252
+      Cirno_66: 7248750793055526303
+      Cirno_67: 2891813855031859427
+      Cirno_68: 7716426167687608643
+      Cirno_69: -7151018321529460032
+      Cirno_7: -401175357819509841
+      Cirno_70: 9078414435276448990
+      Cirno_71: 6350525211600295552
+      Cirno_72: 6287676468837648069
+      Cirno_73: -2460023620616594904
+      Cirno_74: -6096504460662354673
+      Cirno_8: 7101494622927567259
+      Cirno_9: -7722580891433369786
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

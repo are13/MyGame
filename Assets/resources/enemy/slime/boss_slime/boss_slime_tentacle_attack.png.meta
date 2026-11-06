@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 460d177a2de558642aa98fb81ca31625
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5056669444027136078
+    second: boss_slime_tentacle_attack_0
+  - first:
+      213: -4616053006872913750
+    second: boss_slime_tentacle_attack_1
+  - first:
+      213: -4845851570839641948
+    second: boss_slime_tentacle_attack_2
+  - first:
+      213: 5756495589391526187
+    second: boss_slime_tentacle_attack_3
+  - first:
+      213: -7069804626296297768
+    second: boss_slime_tentacle_attack_4
+  - first:
+      213: 7433403318126503772
+    second: boss_slime_tentacle_attack_5
+  - first:
+      213: -1295594200188388458
+    second: boss_slime_tentacle_attack_6
+  - first:
+      213: 6974498512642651101
+    second: boss_slime_tentacle_attack_7
+  - first:
+      213: -5080897963226418395
+    second: boss_slime_tentacle_attack_8
+  - first:
+      213: -8659854533023456143
+    second: boss_slime_tentacle_attack_9
+  - first:
+      213: 8814051948957925091
+    second: boss_slime_tentacle_attack_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 15
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7c03a9ee913d9b0800000000000000
+      internalID: -5056669444027136078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 14
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa857f44f3c70ffb0800000000000000
+      internalID: -4616053006872913750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 15
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0a5d5bba310ccb0800000000000000
+      internalID: -4845851570839641948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 15
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29e8c44d3e23ef40800000000000000
+      internalID: 5756495589391526187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_4
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 14
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6223a562203ed90800000000000000
+      internalID: -7069804626296297768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_5
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 14
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57e3291fe0c82760800000000000000
+      internalID: 7433403318126503772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_6
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 15
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bf6b470ff150ee0800000000000000
+      internalID: -1295594200188388458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 15
+        width: 41
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd33e8cd1756ac060800000000000000
+      internalID: 6974498512642651101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_8
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 14
+        width: 42
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52332e1e8360d79b0800000000000000
+      internalID: -5080897963226418395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 15
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174a4902f2402d780800000000000000
+      internalID: -8659854533023456143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss_slime_tentacle_attack_10
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 15
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eef9797c8dc15a70800000000000000
+      internalID: 8814051948957925091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      boss_slime_tentacle_attack_0: -5056669444027136078
+      boss_slime_tentacle_attack_1: -4616053006872913750
+      boss_slime_tentacle_attack_10: 8814051948957925091
+      boss_slime_tentacle_attack_2: -4845851570839641948
+      boss_slime_tentacle_attack_3: 5756495589391526187
+      boss_slime_tentacle_attack_4: -7069804626296297768
+      boss_slime_tentacle_attack_5: 7433403318126503772
+      boss_slime_tentacle_attack_6: -1295594200188388458
+      boss_slime_tentacle_attack_7: 6974498512642651101
+      boss_slime_tentacle_attack_8: -5080897963226418395
+      boss_slime_tentacle_attack_9: -8659854533023456143
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
