@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Teleportal : TriggerEntity
 {
 
+    public Vector2 spawnPoint;
     public override void trigger(GameObject gameObject)
     {
         base.trigger(gameObject);
@@ -13,6 +14,7 @@ public class Teleportal : TriggerEntity
         {
             
             SceneManager.LoadScene("Level_2");
+            player.transform.position = Vector3.zero;
         }
     }
 }
