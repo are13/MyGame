@@ -26,6 +26,7 @@ public class Player : LivingEntity
     float chargeTimer;
     bool isChargingLogical = false;
     bool isOpeningInventory = false;
+    bool isLookingInfo = false;
     Vector2 move;
     Animator playerAnime;
     static readonly int isWalking = Animator.StringToHash("isWalking");
@@ -36,7 +37,7 @@ public class Player : LivingEntity
     void Awake()
     {
         
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(transform.parent.gameObject);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -132,6 +133,9 @@ public class Player : LivingEntity
             }
         }
         else prompt.gameObject.SetActive(false);
+
+        if (Keyboard.current.rKey.wasPressedThisFrame) isLookingInfo = !isLookingInfo;
+        infoText.setActive(isLookingInfo);
     }
 
     protected override void FixedUpdate()

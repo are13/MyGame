@@ -35,5 +35,9 @@ public class InfoText : MonoBehaviour
         if(transform.childCount > maxShown) DestroyImmediate(transform.GetChild(0).gameObject);
     }
 
-    
+    public void setActive(bool act)
+    {
+        
+        gameObject.SetActive(act);
+    }
 }
