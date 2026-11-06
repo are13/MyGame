@@ -33,7 +33,11 @@ public class Player : LivingEntity
     static readonly int isCharging = Animator.StringToHash("isCharging");
     // Vector2 selecting = new Vector2();
 
-
+    void Awake()
+    {
+        
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     protected override void Start()
@@ -115,7 +119,7 @@ public class Player : LivingEntity
 
         if (inventory[idxSelected] != null && inventory[idxSelected].amount <= 0) inventory[idxSelected] = null;
 
-        print(lookingOptions);
+        // print(lookingOptions);
         if (lookingOptions > 0)
         {
 
