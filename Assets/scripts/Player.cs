@@ -17,19 +17,21 @@ public class Player : LivingEntity
     public GameObject healthBar;
     public TitleInfo titleInfo;
     public TitleInfo globalInfo;
+    public Prompt globalPrompt;
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI chargeText;
     public TextMeshProUGUI attackText;
     public int lookingOptions = 0;
     public Prompt prompt;
     public InfoText infoText;
+    public Option dieOption;
+    public bool hasDie = false;
     List<ItemStack> inventory;
     int idxSelected = 0;
     float chargeTimer;
     bool isChargingLogical = false;
     bool isOpeningInventory = false;
     bool isLookingInfo = false;
-    bool hasDie = false;
     Vector2 move;
     Animator playerAnime;
     static readonly int isWalking = Animator.StringToHash("isWalking");
@@ -376,9 +378,28 @@ public class Player : LivingEntity
         return isAllPicked;
     }
 
+    public void restart()
+    {
+        
+        currentHealth = maxHealth;
+        setHealth(maxHealth);
+        transform.position = Vector2.zero;
+    }
+
     public void dieInfo()
     {
         
+        print(globalInfo);
         globalInfo.setShow("You Died.",-1);
+        // globalPrompt.addOptions(new List<Option>{new Option().init()});
+
+        globalPrompt.addOptions(new List<Option>{dieOption.init((p) =>
+        {
+            
+            p.restart();
+            p.globalPrompt.removeAll();
+            p.globalInfo.endShow();
+        },"Restart")});
+        
     }
 }

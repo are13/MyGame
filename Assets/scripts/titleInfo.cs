@@ -34,4 +34,10 @@ public class TitleInfo : MonoBehaviour
         gameObject.SetActive(true);
         image.gameObject.SetActive(false);
     }
+
+    public void endShow()
+    {
+        
+        gameObject.SetActive(false);
+    }
 }

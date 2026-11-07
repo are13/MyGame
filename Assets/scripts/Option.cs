@@ -13,12 +13,14 @@ public class Option : MonoBehaviour
     public Action<Player> action;
     public int id;
 
-    public void init(Action<Player> action,String text="test",Image image = null)
+    public Option init(Action<Player> action,String text="test",Image image = null)
     {
         
         this.action = action;
         this.text.text = text;
         if(image != null) iconImg = image;
+
+        return this;
     }
 
     public void setId(int id)

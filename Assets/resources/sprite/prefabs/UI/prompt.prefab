@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3841001295490996360}
   - component: {fileID: 5946324661602615696}
   - component: {fileID: 1134333290319361401}
-  - component: {fileID: 7219027579725830849}
   m_Layer: 0
   m_Name: prompt
   m_TagString: UI
@@ -78,22 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 495a221f52e3d164da4fda62165c6a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Keine
-  options: {fileID: 0}
-  selected: 0
-  maxIdx: 2
---- !u!114 &7219027579725830849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8221590307511594977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11d33bdd5d541642b3228e757d1e543, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Prompt
-  optionPrefab: {fileID: 7264641752621736475, guid: 8c0f7e3f8a807d1409f596a89854a5d1, type: 3}
+  options:
+  - {fileID: 0}
 --- !u!1001 &1337970105394050430
 PrefabInstance:
   m_ObjectHideFlags: 0
