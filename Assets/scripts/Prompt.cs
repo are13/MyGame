@@ -1,12 +1,17 @@
 
 
+using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Prompt : MonoBehaviour
 {
 
     public GameObject optionPrefab;
+    public GameObject buttonPrefab;
     // public List<Option> options;
     int selected = 0;
 
@@ -38,6 +43,14 @@ public class Prompt : MonoBehaviour
         selected = newSelected;
     }
 
+    public void addOptions(String text,UnityAction action)
+    {
+        
+        var temp = Instantiate(buttonPrefab,transform,false);
+        temp.GetComponent<TextMeshProUGUI>().text = text;
+        temp.GetComponent<Button>().onClick.AddListener(action);
+    }
+
     public void addOptions(List<Option> options)
     {
 
@@ -48,6 +61,8 @@ public class Prompt : MonoBehaviour
             var temp = Instantiate(option, transform, false);
             temp.action = option.action;
             temp.transform.localScale = Vector3.one;
+
+            print("aaaaaaaa");
         }
 
 
@@ -65,6 +80,16 @@ public class Prompt : MonoBehaviour
 
                 Destroy(target.gameObject);
             }
+        }
+    }
+
+    public void removeAll()
+    {
+        
+        for (int i = transform.childCount-1 ; i >= 0; i--)
+        {
+            
+            Destroy(transform.GetChild(i).gameObject);
         }
     }
     void Start()

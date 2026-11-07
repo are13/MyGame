@@ -55,5 +55,11 @@ public abstract class enemy : LivingEntity
         }
     }
 
+    public void stopOnPlayerDie()
+    {
+        
+        gameObject.SetActive(false);
+    }
+
     public virtual void trackPlayer(){}
 }

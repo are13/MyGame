@@ -134,7 +134,7 @@ public class enemy_cirno : enemy, IAttackAble
         if (currentHealth <= 0)
         {
 
-            LootData data = LootList[Random.Range(0, LootList.Count - 1)];
+            LootData data = LootList[Random.Range(0, LootList.Count)];
             // LootData data = LootList[1];
 
             if (Random.Range(0f, 1f) < data.chance)

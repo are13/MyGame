@@ -51,6 +51,7 @@ public class HealthBarUIController : MonoBehaviour
     public void removeObj()
     {
         // print("invoked");
+        if(entity is Player player) return;
         entity.onEntityHealthChanged.RemoveListener(updateBar);
         entity.onEntityDie.RemoveListener(removeObj);
 

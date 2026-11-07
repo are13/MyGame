@@ -116,6 +116,16 @@ public class ZoneManager : MonoBehaviour
             door.SetActive(false);
         }
     }
+
+    public void onPlayerDie()
+    {
+        
+        foreach (GameObject door in doors)
+        {
+
+            door.SetActive(false);
+        }
+    }
 }
 
 enum EnterWay

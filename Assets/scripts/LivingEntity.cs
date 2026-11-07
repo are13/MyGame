@@ -77,4 +77,10 @@ public class LivingEntity : MonoBehaviour
         this.speed = speed;
     }
 
+    public virtual void setHealth(float newHealth)
+    {
+
+        onEntityHealthChanged?.Invoke(newHealth,newHealth-currentHealth);
+        currentHealth = newHealth;
+    }
 }
