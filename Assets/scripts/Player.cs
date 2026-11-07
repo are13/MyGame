@@ -15,6 +15,8 @@ public class Player : LivingEntity
     public Inventory inventoryUI;
     public int inventorySize;
     public GameObject healthBar;
+    public TitleInfo titleInfo;
+    public TitleInfo globalInfo;
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI chargeText;
     public TextMeshProUGUI attackText;
@@ -27,6 +29,7 @@ public class Player : LivingEntity
     bool isChargingLogical = false;
     bool isOpeningInventory = false;
     bool isLookingInfo = false;
+    bool hasDie = false;
     Vector2 move;
     Animator playerAnime;
     static readonly int isWalking = Animator.StringToHash("isWalking");
@@ -294,7 +297,9 @@ public class Player : LivingEntity
         if (currentHealth <= 0)
         {
 
-            Destroy(gameObject);
+            // Destroy(gameObject);
+            gameObject.SetActive(false);
+            hasDie = true;
         }
     }
 
@@ -369,5 +374,11 @@ public class Player : LivingEntity
         }
 
         return isAllPicked;
+    }
+
+    public void dieInfo()
+    {
+        
+        globalInfo.setShow("You Died.",-1);
     }
 }
