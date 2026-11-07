@@ -34,7 +34,8 @@ public class Slot : MonoBehaviour
         }
 
         // print(Resources.Load<Sprite>(itemStack.item.icon));
-        icon.sprite = Resources.Load<Sprite>(itemStack.item.icon);
+        // icon.sprite = Resources.Load<Sprite>(itemStack.item.icon);
+        icon.sprite = itemStack.item.icon;
         amount.text = (itemStack.amount>1)?itemStack.amount+"":"";
     }
 }
