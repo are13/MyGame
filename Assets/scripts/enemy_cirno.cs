@@ -12,7 +12,7 @@ public class enemy_cirno : enemy, IAttackAble
     public float dirGap = 10;
     GameObject isReleasingIce;
     [SerializeField]
-    public List<LootData> LootList = new List<LootData> { new LootData(Items.ICED_FROG, 1, 1, 3), new LootData(Items.SCROLL_SPEED, 1, 1, 1) };
+    public List<LootData> LootList = new List<LootData>();
     float walkTimer;
     Rigidbody2D cirnoRb;
 
@@ -27,7 +27,10 @@ public class enemy_cirno : enemy, IAttackAble
         base.Start();
         attackTimer = attackCD;
         cirnoRb = GetComponent<Rigidbody2D>();
-        print(cirnoRb == null);
+        // print(cirnoRb == null);
+
+        LootList.Add(new LootData(Items.ICED_FROG, 1, 1, 3));
+        LootList.Add(new LootData(Items.SCROLL_SPEED, 1, 1, 1));
     }
 
     // Update is called once per frame
@@ -141,7 +144,8 @@ public class enemy_cirno : enemy, IAttackAble
             {
 
                 // print("loot");
-                GameObject loot = Instantiate(Resources.Load<GameObject>(data.item.preFab), transform.position, Quaternion.identity);
+                // GameObject loot = Instantiate(Resources.Load<GameObject>(data.item.preFab), transform.position, Quaternion.identity);
+                GameObject loot = Instantiate(data.item.preFab, transform.position, Quaternion.identity);
                 ItemData itemData = loot.GetComponent<ItemData>();
                 itemData.create(new ItemStack(data.item, Random.Range(data.minAmount, data.maxAmount)));
             }

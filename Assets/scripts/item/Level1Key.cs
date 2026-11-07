@@ -5,7 +5,7 @@ public class Level1Key : Item, IUsable
 {
     
     public String portal = "sprite/prefabs/trigger/teleportal";
-    public Level1Key(string id,string gameObject,string sprite = null,string displayName = "untitled" ,string description = "",int maxStackNum = 64 , ItemTypes itemType = ItemTypes.MISC):base(id,gameObject,sprite,displayName,description,maxStackNum,itemType)
+    public Level1Key(string id,GameObject gameObject,Sprite sprite = null,string displayName = "untitled" ,string description = "",int maxStackNum = 64 , ItemTypes itemType = ItemTypes.MISC):base(id,gameObject,sprite,displayName,description,maxStackNum,itemType)
     {
     }
 

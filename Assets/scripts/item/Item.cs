@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Item
 {
-    
-
     public string id;
     public string displayName;
-    [TextArea] public string description;
+    public string description;
     public int maxStackNum;
-    public string icon;
+    public Sprite icon;
     public ItemTypes type;
-    public string preFab;
+    public GameObject preFab;
 
-    public Item(string id,string gameObject,string sprite = null,string displayName = "untitled" ,string description = "",int maxStackNum = 64 , ItemTypes itemType = ItemTypes.MISC)
+    public Item(string id,GameObject preFab,Sprite sprite = null,string displayName = "untitled" ,string description = "",int maxStackNum = 64 , ItemTypes itemType = ItemTypes.MISC)
     {
         
         this.id = id;
@@ -23,7 +21,7 @@ public class Item
         this.maxStackNum = maxStackNum;
         this.icon = sprite;
         this.type = itemType;
-        this.preFab = gameObject;
+        this.preFab = preFab;
     }
 
     public virtual void create()
