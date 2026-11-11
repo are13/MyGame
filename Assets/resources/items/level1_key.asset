@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38ffaf734b052f478e15f1ebdc406af, type: 3}
   m_Name: level1_key
   m_EditorClassIdentifier: Assembly-CSharp::itemLoadData
-  id: 
-  displayName: 
-  description: 
-  maxStackNum: 0
-  icon: {fileID: 0}
+  id: level1_key
+  displayName: Level 1 Key
+  description: use it to go to next level
+  maxStackNum: 1
+  icon: {fileID: 9171665185608005271, guid: 147c7c424595d9f4f955fbf4fccba9a4, type: 3}
   type: 0
-  preFab: {fileID: 0}
+  preFab: {fileID: 5851036488928582938, guid: 71fe250f26f1b6144ab602246eea3aa1, type: 3}

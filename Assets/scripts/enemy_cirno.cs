@@ -106,10 +106,12 @@ public class enemy_cirno : enemy, IAttackAble
                 case 2:
                     {
                         Vector2 temp = transform.position - player.transform.position;
-                        isReleasingIce = Instantiate(pillTypes[2], transform.position, Quaternion.Euler(0, 0, Mathf.Deg2Rad * Mathf.Atan2(temp.y, temp.x)));
+                        print(Mathf.Rad2Deg * Mathf.Atan2(temp.y, temp.x));
+                        isReleasingIce = Instantiate(pillTypes[2], transform.position, Quaternion.Euler( 0,0, Mathf.Rad2Deg * Mathf.Atan2(temp.y, temp.x)));
                         cirnoBullet3 bullet = isReleasingIce.GetComponent<cirnoBullet3>();
                         bullet.spin(Random.Range(0f, 8196f));
                         cirnoRb.constraints = RigidbodyConstraints2D.FreezePosition;
+                        cirnoRb.linearVelocity = Vector2.zero;
                         break;
                     }
             }
@@ -149,7 +151,7 @@ public class enemy_cirno : enemy, IAttackAble
                 ItemData itemData = loot.GetComponent<ItemData>();
                 itemData.create(new ItemStack(data.item, Random.Range(data.minAmount, data.maxAmount)));
             }
-            Destroy(gameObject);
+            Destroy(gameObject,1);
         }
     }
 

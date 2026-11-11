@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38ffaf734b052f478e15f1ebdc406af, type: 3}
   m_Name: iced_frog
   m_EditorClassIdentifier: Assembly-CSharp::itemLoadData
-  id: 
-  displayName: 
-  description: 
-  maxStackNum: 0
-  icon: {fileID: 0}
+  id: iced_frog
+  displayName: Iced Frog
+  description: A pity frog frozen by Cirno.
+  maxStackNum: 64
+  icon: {fileID: 21300000, guid: a0eab7f05f8042e45871dd2773d33863, type: 3}
   type: 0
-  preFab: {fileID: 0}
+  preFab: {fileID: 1674664029707270670, guid: bf60ccab0f06ebe43bcfb3957cfd8a0a, type: 3}

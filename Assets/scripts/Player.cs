@@ -192,8 +192,6 @@ public class Player : LivingEntity
             {
 
                 move.Normalize();
-                // print("x=" + dm.x);
-                // print("y=" + dm.y);
                 move *= speed;
 
                 selfRb.linearVelocity = move;
@@ -380,7 +378,7 @@ public class Player : LivingEntity
 
     public void restart()
     {
-        
+        hasDie = false;
         currentHealth = maxHealth;
         setHealth(maxHealth);
         transform.position = Vector2.zero;

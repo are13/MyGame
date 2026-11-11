@@ -35,6 +35,11 @@ public class cirnoBullet3 : Bullet
         this.scale = scale * Mathf.Deg2Rad;
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
     void OnTriggerStay2D(Collider2D collision)
     {
 
