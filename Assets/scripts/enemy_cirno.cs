@@ -12,7 +12,8 @@ public class enemy_cirno : enemy, IAttackAble
     public float dirGap = 10;
     GameObject isReleasingIce;
     [SerializeField]
-    public List<LootData> LootList = new List<LootData>();
+    // public List<LootData> LootList = new List<LootData>();
+    public LootTable lootTable;
     float walkTimer;
     Rigidbody2D cirnoRb;
 
@@ -29,8 +30,8 @@ public class enemy_cirno : enemy, IAttackAble
         cirnoRb = GetComponent<Rigidbody2D>();
         // print(cirnoRb == null);
 
-        LootList.Add(new LootData(Items.ICED_FROG, 1, 1, 3));
-        LootList.Add(new LootData(Items.SCROLL_SPEED, 1, 1, 1));
+        // LootList.Add(new LootData(Items.ICED_FROG, 1, 1, 3));
+        // LootList.Add(new LootData(Items.SCROLL_SPEED, 1, 1, 1));
     }
 
     // Update is called once per frame
@@ -139,17 +140,15 @@ public class enemy_cirno : enemy, IAttackAble
         if (currentHealth <= 0)
         {
 
-            LootData data = LootList[Random.Range(0, LootList.Count)];
             // LootData data = LootList[1];
-
+            LootData data = lootTable.loots[Random.Range(0,lootTable.loots.Count)];
             if (Random.Range(0f, 1f) < data.chance)
             {
 
                 // print("loot");
-                // GameObject loot = Instantiate(Resources.Load<GameObject>(data.item.preFab), transform.position, Quaternion.identity);
                 GameObject loot = Instantiate(data.item.preFab, transform.position, Quaternion.identity);
                 ItemData itemData = loot.GetComponent<ItemData>();
-                itemData.create(new ItemStack(data.item, Random.Range(data.minAmount, data.maxAmount)));
+                itemData.create(new ItemStack(ItemDataInitializer.read[data.item.id], Random.Range(data.minAmount, data.maxAmount)));
             }
             Destroy(gameObject,1);
         }

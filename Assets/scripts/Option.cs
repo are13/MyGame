@@ -11,7 +11,6 @@ public class Option : MonoBehaviour
     public Image isSelected;
     public TextMeshProUGUI text;
     public Action<Player> action;
-    public int id;
 
     public Option init(Action<Player> action,String text="test",Image image = null)
     {
@@ -21,12 +20,6 @@ public class Option : MonoBehaviour
         if(image != null) iconImg = image;
 
         return this;
-    }
-
-    public void setId(int id)
-    {
-        
-        this.id = id;
     }
 
     public void select(bool b)
@@ -45,21 +38,5 @@ public class Option : MonoBehaviour
     {
         
         action?.Invoke(player);
-    }
-    public override bool Equals(object obj)
-    {
-        if(obj is Option option)
-        {
-            
-            return this.id == option.id;
-        }
-        return false;
-    }
-    
-    // override object.GetHashCode
-    public override int GetHashCode()
-    {
-        // TODO: write your implementation of GetHashCode() here
-        return id;
     }
 }

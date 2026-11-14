@@ -133,14 +133,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4566037, g: 0.35408324, b: 0.35408324, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7042847911465117151, guid: 7930f4f5ec9b4e143bec4af776458ffb, type: 3}
+  m_Sprite: {fileID: -4162253909993174453, guid: 3f5c69ff2405aeb4a9a709ca8845cee4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -417,3 +417,4 @@ MonoBehaviour:
   iconImg: {fileID: 867873847905875143}
   isSelected: {fileID: 7539737902869531171}
   text: {fileID: 7921867558222367626}
+  id: 0

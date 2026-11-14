@@ -4,6 +4,7 @@ using UnityEngine;
 public abstract class NPCEntity : MonoBehaviour, IInteractable
 {
 
+    public string id;
     public List<Option> options;
     protected bool hasInit = false;
 
@@ -11,6 +12,12 @@ public abstract class NPCEntity : MonoBehaviour, IInteractable
     {
         
         
+    }
+
+    public string getId()
+    {
+        
+        return id;
     }
 
     public List<Option> interact(Player player)

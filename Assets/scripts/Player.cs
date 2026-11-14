@@ -21,17 +21,18 @@ public class Player : LivingEntity
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI chargeText;
     public TextMeshProUGUI attackText;
-    public int lookingOptions = 0;
     public Prompt prompt;
     public InfoText infoText;
     public Option dieOption;
     public bool hasDie = false;
     List<ItemStack> inventory;
+    List<IInteractable> nearBy;
     int idxSelected = 0;
     float chargeTimer;
     bool isChargingLogical = false;
     bool isOpeningInventory = false;
     bool isLookingInfo = false;
+    bool isInteracting = false;
     Vector2 move;
     Animator playerAnime;
     static readonly int isWalking = Animator.StringToHash("isWalking");
@@ -126,7 +127,7 @@ public class Player : LivingEntity
         if (inventory[idxSelected] != null && inventory[idxSelected].amount <= 0) inventory[idxSelected] = null;
 
         // print(lookingOptions);
-        if (lookingOptions > 0)
+        if (nearBy.Count > 0)
         {
 
             prompt.gameObject.SetActive(true);
@@ -134,7 +135,7 @@ public class Player : LivingEntity
             if (Keyboard.current.bKey.wasPressedThisFrame)
             {
 
-                prompt.execute(this);
+                prompt.execute();
             }
         }
         else prompt.gameObject.SetActive(false);
@@ -265,10 +266,8 @@ public class Player : LivingEntity
 
             if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
             {
-                print("entered");
-                prompt.addOptions(interactable.interact(this));
-                lookingOptions++;
-                prompt.updateSelected(0);
+                nearBy.Add(interactable);
+                prompt.updateNearBy(nearBy);
             }
         }
     }
@@ -282,8 +281,8 @@ public class Player : LivingEntity
             if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
             {
 
-                prompt.removeOptions(interactable.interact(this));
-                lookingOptions--;
+                nearBy.Remove(interactable);
+                prompt.updateNearBy(nearBy);
             }
         }
     }
@@ -391,13 +390,13 @@ public class Player : LivingEntity
         globalInfo.setShow("You Died.",-1);
         // globalPrompt.addOptions(new List<Option>{new Option().init()});
 
-        globalPrompt.addOptions(new List<Option>{dieOption.init((p) =>
-        {
+        // globalPrompt.addOptions(new List<Option>{dieOption.init((p) =>
+        // {
             
-            p.restart();
-            p.globalPrompt.removeAll();
-            p.globalInfo.endShow();
-        },"Restart")});
+        //     p.restart();
+        //     p.globalPrompt.removeAll();
+        //     p.globalInfo.endShow();
+        // },"Restart")});
         
     }
 }
