@@ -52,6 +52,8 @@ public class Player : LivingEntity
 
         base.Start();
         playerAnime = GetComponent<Animator>();
+        nearBy = new List<IInteractable>();
+        if (prompt == null) prompt = GetComponentInChildren<Prompt>(true);
         inventory = new List<ItemStack>();
         for (int i = 0; i < inventorySize; i++)
         {
@@ -118,7 +120,8 @@ public class Player : LivingEntity
         }
         else playerAnime.SetBool(isWalking, false);
 
-        if (Mouse.current.rightButton.isPressed)
+        // **************changed*****************
+        if (!DialogController.isShowing && Mouse.current.rightButton.isPressed)
         {
 
             playerAnime.SetBool(isCharging, true);
@@ -149,6 +152,22 @@ public class Player : LivingEntity
 
         base.FixedUpdate();
         // print(player.linearVelocity);
+
+        // ***********added**************
+        // Movement and attacks are locked while an SO dialog is running.
+        if (DialogController.isShowing)
+        {
+            move = Vector2.zero;
+            selfRb.linearVelocity = Vector2.zero;
+            playerAnime.SetBool(isWalking, false);
+            playerAnime.SetBool(isCharging, false);
+            playerAnime.SetBool(isAttacking, false);
+            isChargingLogical = false;
+            chargeTimer = 0f;
+            return;
+        }
+        // ***********added**************
+
         move.x = ((Keyboard.current.dKey.isPressed) ? 1 : 0) - ((Keyboard.current.aKey.isPressed) ? 1 : 0);
         move.y = ((Keyboard.current.wKey.isPressed) ? 1 : 0) - ((Keyboard.current.sKey.isPressed) ? 1 : 0);
 

@@ -16,7 +16,9 @@ public class Option : MonoBehaviour
     {
         
         this.action = action;
-        this.text.text = text;
+        // ***********changed**************
+        if (this.text != null) this.text.text = text;
+        // ***********changed**************
         if(image != null) iconImg = image;
 
         return this;
@@ -25,7 +27,9 @@ public class Option : MonoBehaviour
     public void select(bool b)
     {
         
-        isSelected.gameObject.SetActive(b);
+        // ***********changed**************
+        if (isSelected != null) isSelected.gameObject.SetActive(b);
+        // ***********changed**************
     }
 
     // public void updateDisplay()
