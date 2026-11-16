@@ -24,7 +24,7 @@ public abstract class NPCEntity : MonoBehaviour, IInteractable
         return id;
     }
 
-    public DialogNode interact(Player player)
+    public virtual DialogNode interact(Player player)
     {
         if(!hasInit) init();
 

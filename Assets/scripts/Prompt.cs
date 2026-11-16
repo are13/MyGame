@@ -15,7 +15,7 @@ public class Prompt : MonoBehaviour
     public Option optionPrefab;
     public Player player;
     // public List<Option> options;
-    List<Option> options;
+    List<Option> options = new List<Option>();
     int selected = 0;
 
     // ***********added**************
@@ -52,9 +52,16 @@ public class Prompt : MonoBehaviour
     {
 
         removeAll();
+        nearby.Clear();
         if (interactables != null)
         {
-            nearby.AddRange(interactables);
+            foreach (var interactable in interactables)
+            {
+                if (!nearby.Contains(interactable))
+                {
+                    nearby.Add(interactable);
+                }
+            }
         }
 
         if (isInDialog) return;
@@ -85,12 +92,19 @@ public class Prompt : MonoBehaviour
 
     string labelOf(IInteractable interactable)
     {
-        string label = interactable == null ? null : interactable.getId();
-        // **************changed*****************
-        // NPC 未配置 id 时用具体类型名（如 "Keine"），而不是触发器子物体的名字。
-        if (string.IsNullOrEmpty(label) && interactable != null) label = interactable.GetType().Name;
-        if (string.IsNullOrEmpty(label) && interactable is Component component) label = component.name;
-        if (string.IsNullOrEmpty(label)) label = "Talk";
+        string label = "";
+        if (interactable == null)
+        {
+            return "Talk";
+        }
+        else
+        {
+            
+            label = interactable.getId();
+        }
+        if (string.IsNullOrEmpty(label)) label = interactable.GetType().Name;
+        // if (string.IsNullOrEmpty(label) && interactable is Component component) label = component.name;
+        // if (string.IsNullOrEmpty(label)) label = "Talk";
         return label;
     }
 
@@ -178,12 +192,16 @@ public class Prompt : MonoBehaviour
 
     public void removeAll()
     {
-        if (options == null) options = new List<Option>();
+
+        if (options == null) return;
+        print($"{options.Count} options to remove");
         foreach (Option option in options)
         {
+            print("invoked");
             if (option == null) continue;
             // option.transform.SetParent(null, false);
             print($"{nearbyCount} npcs nearby.");
+            option.transform.SetParent(null);
             Destroy(option.gameObject);
         }
 

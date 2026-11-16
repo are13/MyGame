@@ -139,7 +139,7 @@ public class Player : LivingEntity
                 prompt.execute();
             }
         }
-        else prompt.gameObject.SetActive(false);
+        // else prompt.gameObject.SetActive(false);
 
         if (Keyboard.current.rKey.wasPressedThisFrame) isLookingInfo = !isLookingInfo;
         infoText.setActive(isLookingInfo);
@@ -259,7 +259,6 @@ public class Player : LivingEntity
 
         playerAnime.SetBool(isCharging, false);
         isChargingLogical = false;
-        // player.linearVelocity -= player.linearVelocity.normalized*chargeSpeed;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -271,13 +270,13 @@ public class Player : LivingEntity
             ItemData temp = collision.gameObject.GetComponent<ItemData>();
             if (temp.s != null)
             {
-                if(pickItem(temp.s)) Destroy(collision.gameObject);
+                if (pickItem(temp.s)) Destroy(collision.gameObject);
             }
         }
 
         if (collision.gameObject.CompareTag("NPC"))
         {
-
+            print($"{collision.tag} entered.");
             if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
             {
                 nearBy.Add(interactable);
@@ -291,7 +290,7 @@ public class Player : LivingEntity
 
         if (collision.gameObject.CompareTag("NPC"))
         {
-            print("entered");
+            print("exited");
             if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
             {
 
@@ -398,20 +397,33 @@ public class Player : LivingEntity
         transform.position = Vector2.zero;
     }
 
+    public List<ItemStack> GetInventory()
+    {
+
+        return inventory;
+    }
+
+    public void removeItemWithoutDestory(int idx)
+    {
+
+        inventory.RemoveAt(idx);
+        onPlayerInventoryChange?.Invoke(inventory, new List<int> { idx });
+    }
+
     public void dieInfo()
     {
-        
+
         print(globalInfo);
-        globalInfo.setShow("You Died.",-1);
+        globalInfo.setShow("You Died.", -1);
         // globalPrompt.addOptions(new List<Option>{new Option().init()});
 
         // globalPrompt.addOptions(new List<Option>{dieOption.init((p) =>
         // {
-            
+
         //     p.restart();
         //     p.globalPrompt.removeAll();
         //     p.globalInfo.endShow();
         // },"Restart")});
-        
+
     }
 }
