@@ -7,5 +7,5 @@ public interface IInteractable
 {
     
     string getId();
-    List<Option> interact(Player player);
+    DialogNode interact(Player player);
 }

@@ -185,6 +185,15 @@ public class DialogController : MonoBehaviour
             return false;
         }
 
+        // ***********added**************
+        // 没配选项 prefab 时不要进入对话，否则玩家会被冻结且没有可选项。
+        if (owner.optionPrefab == null)
+        {
+            Debug.LogError("[Dialog] Prompt.optionPrefab 未赋值：请在 Inspector 中给 Prompt 指定选项 prefab。");
+            return false;
+        }
+        // ***********added**************
+
         prompt = owner;
         isAuto = false;
         if (autoImage != null) autoImage.color = Color.white;

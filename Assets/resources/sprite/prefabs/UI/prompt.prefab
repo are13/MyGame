@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3841001295490996360}
   - component: {fileID: 5946324661602615696}
-  - component: {fileID: 1134333290319361401}
+  - component: {fileID: 7746714278034100374}
   m_Layer: 0
   m_Name: prompt
   m_TagString: UI
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1134333290319361401
+--- !u!114 &7746714278034100374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,11 +74,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8221590307511594977}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 495a221f52e3d164da4fda62165c6a4d, type: 3}
+  m_Script: {fileID: 11500000, guid: c11d33bdd5d541642b3228e757d1e543, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Keine
-  options:
-  - {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::Prompt
+  optionPrefab: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1001 &1337970105394050430
 PrefabInstance:
   m_ObjectHideFlags: 0

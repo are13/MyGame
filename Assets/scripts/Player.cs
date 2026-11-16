@@ -42,7 +42,6 @@ public class Player : LivingEntity
 
     void Awake()
     {
-        
         DontDestroyOnLoad(transform.parent.gameObject);
     }
 
@@ -120,7 +119,6 @@ public class Player : LivingEntity
         }
         else playerAnime.SetBool(isWalking, false);
 
-        // **************changed*****************
         if (!DialogController.isShowing && Mouse.current.rightButton.isPressed)
         {
 
@@ -153,8 +151,6 @@ public class Player : LivingEntity
         base.FixedUpdate();
         // print(player.linearVelocity);
 
-        // ***********added**************
-        // Movement and attacks are locked while an SO dialog is running.
         if (DialogController.isShowing)
         {
             move = Vector2.zero;
@@ -166,7 +162,6 @@ public class Player : LivingEntity
             chargeTimer = 0f;
             return;
         }
-        // ***********added**************
 
         move.x = ((Keyboard.current.dKey.isPressed) ? 1 : 0) - ((Keyboard.current.aKey.isPressed) ? 1 : 0);
         move.y = ((Keyboard.current.wKey.isPressed) ? 1 : 0) - ((Keyboard.current.sKey.isPressed) ? 1 : 0);
@@ -301,6 +296,7 @@ public class Player : LivingEntity
             {
 
                 nearBy.Remove(interactable);
+                print($"{nearBy.Count} npcs nearby.");
                 prompt.updateNearBy(nearBy);
             }
         }

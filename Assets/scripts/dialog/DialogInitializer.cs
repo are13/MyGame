@@ -23,7 +23,7 @@ class DialogInitializer : MonoBehaviour
         isLoaded = true;
         nodes.Clear();
 
-        string folder = path == null ? "dialog" : path.Trim('/');
+        string folder =( path == null )? "dialog" : path.Trim('/');
         DialogNode[] loaded = Resources.LoadAll<DialogNode>(folder);
         foreach (DialogNode node in loaded)
         {

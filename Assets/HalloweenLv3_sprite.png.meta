@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 61c36b6875b284d4a977218775506193
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1083036885504095394
+    second: HalloweenLv3_sprite_0
+  - first:
+      213: -385704499790416468
+    second: HalloweenLv3_sprite_1
+  - first:
+      213: -5153014084183385934
+    second: HalloweenLv3_sprite_2
+  - first:
+      213: 8614682540602277650
+    second: HalloweenLv3_sprite_3
+  - first:
+      213: 184774174703794126
+    second: HalloweenLv3_sprite_4
+  - first:
+      213: -8663412994090694869
+    second: HalloweenLv3_sprite_5
+  - first:
+      213: -789379556780436885
+    second: HalloweenLv3_sprite_6
+  - first:
+      213: 3634062528720889991
+    second: HalloweenLv3_sprite_7
+  - first:
+      213: 2087898488096656871
+    second: HalloweenLv3_sprite_8
+  - first:
+      213: -2143661449864621402
+    second: HalloweenLv3_sprite_9
+  - first:
+      213: 4773692366087502940
+    second: HalloweenLv3_sprite_10
+  - first:
+      213: -1122087916372251573
+    second: HalloweenLv3_sprite_11
+  - first:
+      213: -7894504768350221878
+    second: HalloweenLv3_sprite_12
+  - first:
+      213: 8828123178335810864
+    second: HalloweenLv3_sprite_13
+  - first:
+      213: -3232989796664769978
+    second: HalloweenLv3_sprite_14
+  - first:
+      213: 2237886458940845867
+    second: HalloweenLv3_sprite_15
+  - first:
+      213: 3068770540411716869
+    second: HalloweenLv3_sprite_16
+  - first:
+      213: -231522895308015868
+    second: HalloweenLv3_sprite_17
+  - first:
+      213: 730436130877169031
+    second: HalloweenLv3_sprite_18
+  - first:
+      213: 837296812071566568
+    second: HalloweenLv3_sprite_19
+  - first:
+      213: -3085275072972867202
+    second: HalloweenLv3_sprite_20
+  - first:
+      213: 832492503355611814
+    second: HalloweenLv3_sprite_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 287
+        width: 1220
+        height: 1153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a4fd172f48b70f00800000000000000
+      internalID: 1083036885504095394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5f8bd0dc3b5aaf0800000000000000
+      internalID: -385704499790416468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b81aa50ef0dc78b0800000000000000
+      internalID: -5153014084183385934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21fbb5dc0208d8770800000000000000
+      internalID: 8614682540602277650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7b2e60223709200800000000000000
+      internalID: 184774174703794126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2788b858cf55c780800000000000000
+      internalID: -8663412994090694869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b629525b97f8b05f0800000000000000
+      internalID: -789379556780436885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78867f3ad98ce6230800000000000000
+      internalID: 3634062528720889991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed831edc94b9fc10800000000000000
+      internalID: 2087898488096656871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2de1ad44f2042e0800000000000000
+      internalID: -2143661449864621402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5cb3a33aef8f3240800000000000000
+      internalID: 4773692366087502940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4cafd13cfa8d60f0800000000000000
+      internalID: -1122087916372251573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac98bd47db5117290800000000000000
+      internalID: -7894504768350221878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035391ed14bc38a70800000000000000
+      internalID: 8828123178335810864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6428557b8ec1223d0800000000000000
+      internalID: -3232989796664769978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f63d8a0e19e0f10800000000000000
+      internalID: 2237886458940845867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5058c662c86769a20800000000000000
+      internalID: 3068770540411716869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407bbc3472779ccf0800000000000000
+      internalID: -231522895308015868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d5b008ac7032a00800000000000000
+      internalID: 730436130877169031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecb71fa30dae9b00800000000000000
+      internalID: 837296812071566568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79b519eaa6ee25d0800000000000000
+      internalID: -3085275072972867202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenLv3_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 223
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aadfa4658b9d8b00800000000000000
+      internalID: 832492503355611814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HalloweenLv3_sprite_0: 1083036885504095394
+      HalloweenLv3_sprite_1: -385704499790416468
+      HalloweenLv3_sprite_10: 4773692366087502940
+      HalloweenLv3_sprite_11: -1122087916372251573
+      HalloweenLv3_sprite_12: -7894504768350221878
+      HalloweenLv3_sprite_13: 8828123178335810864
+      HalloweenLv3_sprite_14: -3232989796664769978
+      HalloweenLv3_sprite_15: 2237886458940845867
+      HalloweenLv3_sprite_16: 3068770540411716869
+      HalloweenLv3_sprite_17: -231522895308015868
+      HalloweenLv3_sprite_18: 730436130877169031
+      HalloweenLv3_sprite_19: 837296812071566568
+      HalloweenLv3_sprite_2: -5153014084183385934
+      HalloweenLv3_sprite_20: -3085275072972867202
+      HalloweenLv3_sprite_21: 832492503355611814
+      HalloweenLv3_sprite_3: 8614682540602277650
+      HalloweenLv3_sprite_4: 184774174703794126
+      HalloweenLv3_sprite_5: -8663412994090694869
+      HalloweenLv3_sprite_6: -789379556780436885
+      HalloweenLv3_sprite_7: 3634062528720889991
+      HalloweenLv3_sprite_8: 2087898488096656871
+      HalloweenLv3_sprite_9: -2143661449864621402
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

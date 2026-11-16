@@ -1,0 +1,9 @@
+
+
+
+
+public class ShelfEntity : NPCEntity
+{
+    
+    
+}

@@ -6,7 +6,25 @@ using UnityEngine.InputSystem;
 public class PlayerObj : MonoBehaviour
 {
     
+    public static PlayerObj Instance;
     public Player player;
+
+    void Awake()
+    {
+        
+        if(Instance == null)
+        {
+            
+            Instance = this;
+        }else if(Instance != this)
+        {
+            
+            Destroy(this.gameObject);
+            return;
+        }
+
+        
+    }
 
     void Update()
     {

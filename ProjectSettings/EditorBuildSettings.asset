@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_2.unity
     guid: 9e4759d68c5e0b84886edd4fc01a9a90
+  - enabled: 1
+    path: Assets/Scenes/KosuzuHome.unity
+    guid: 194d9dd691faff546a21eb803e87a3dd
+  - enabled: 1
+    path: Assets/Scenes/CottageStreet.unity
+    guid: e3485d9aaf009d746a1d88490cfccba9
+  - enabled: 1
+    path: Assets/Scenes/YukaiForest.unity
+    guid: fabbc5c67cbb0f34b886480f5c5b536d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

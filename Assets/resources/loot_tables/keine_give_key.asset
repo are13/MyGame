@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: keine_give_key
   m_EditorClassIdentifier: Assembly-CSharp::LootTable
-  loots: []
+  loots:
+  - item: {fileID: 11400000, guid: 05afa7524489f0843bb29aacc73ebfcd, type: 2}
+    maxAmount: 1
+    minAmount: 1
+    chance: 1
