@@ -1,5 +1,6 @@
 // DialogueGraphView.cs
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -15,10 +16,10 @@ public class DialogueGraphView : GraphView
     // 加载时算出的显示坐标：不改动资源里保存的 position，只有用户真的拖动节点时才写回数据。
     private readonly Dictionary<DialogNode, Vector2> nodePositions = new Dictionary<DialogNode, Vector2>();
 
-    private const float NodeWidth = 200f;
-    private const float NodeHeight = 150f;
-    private const float LayoutStepX = 280f;
-    private const float LayoutStepY = 180f;
+    private const float NodeWidth = 220f;
+    private const float NodeHeight = 220f;
+    private const float LayoutStepX = 300f;
+    private const float LayoutStepY = 250f;
 
     // 自动布局的起点：往下让开顶部工具栏，否则 (0,0) 的节点会被工具栏挡住
     private static readonly Vector2 LayoutOrigin = new Vector2(40f, 60f);
@@ -43,6 +44,28 @@ public class DialogueGraphView : GraphView
 
         // 监听连线变化
         graphViewChanged += OnGraphViewChanged;
+    }
+
+    /// <summary>
+    /// 拖线时必须告诉 GraphView 哪些端口可以连。
+    /// GraphView 基类默认返回空列表，不重写这个方法就会出现“线能拖出来，但怎么都连不上”的现象。
+    /// </summary>
+    public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
+    {
+        var compatiblePorts = new List<Port>();
+        if (startPort == null) return compatiblePorts;
+
+        foreach (var port in ports)
+        {
+            if (port == null || port == startPort) continue;     // 不能连自己
+            if (port.node == startPort.node) continue;           // 不能连同一个节点
+            if (port.direction == startPort.direction) continue; // 只能 In 连 Out
+            if (port.portType != startPort.portType) continue;   // 端口数据类型要一致
+
+            compatiblePorts.Add(port);
+        }
+
+        return compatiblePorts;
     }
 
     public void PopulateView(DialogContent graph)
@@ -158,7 +181,7 @@ public class DialogueGraphView : GraphView
 
     private DialogueNodeView CreateNodeView(DialogNode node)
     {
-        var nodeView = new DialogueNodeView(node);
+        var nodeView = new DialogueNodeView(node, OnNodeDataChanged);
 
         Vector2 position = nodePositions.TryGetValue(node, out var displayPosition)
             ? displayPosition
@@ -169,6 +192,16 @@ public class DialogueGraphView : GraphView
         nodeViews[node] = nodeView;
         AddElement(nodeView);
         return nodeView;
+    }
+
+    /// <summary>
+    /// 节点里的 speaker / text 被改动时调用：标签资源为脏，Save 按钮或 Ctrl+S 才会写入磁盘。
+    /// </summary>
+    private void OnNodeDataChanged()
+    {
+        if (currentGraph == null) return;
+
+        EditorUtility.SetDirty(currentGraph);
     }
 
     private void DrawEdgesForNode(DialogNode node)
