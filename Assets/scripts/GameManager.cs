@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,13 @@ public class GameManager : MonoBehaviour
     [Header("Transition")]
     public Image fading;
     public float transitionTime = 0.5f;
+    
+    [Header("Dialog")]
+    public Prompt promptManager;
+    public DialogManager dialogManager;
+
+    [Header("Player Instance")]
+    public Player player;
 
 
     void Awake()
@@ -31,6 +39,7 @@ public class GameManager : MonoBehaviour
         var temp = fading.color;
         temp.a = 0;
         fading.color = temp;
+        dialogManager.resetBgs();
     }
 
     public void transformScene(String name)
@@ -78,7 +87,7 @@ public class GameManager : MonoBehaviour
     public void startGame()
     {
         
-        SceneManager.LoadScene("Level_1");
+        SceneManager.LoadScene("KosuzuHome");
 
     }
 }

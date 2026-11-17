@@ -11,5 +11,12 @@ public class Keine : NPCEntity
         // if (options != null && options.Count > 1 && options[1] != null)
         //     options[1].init((player) => player.addItem(new ItemStack(Items.LEVEL1_KEY, 1)), "next level");
         hasInit = true;
+
+    }
+
+    public override void interact(Player player)
+    {
+        print(dialogs.start == null);
+        base.interact(player);
     }
 }

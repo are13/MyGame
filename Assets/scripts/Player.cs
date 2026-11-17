@@ -21,8 +21,8 @@ public class Player : LivingEntity
     public TextMeshProUGUI speedText;
     public TextMeshProUGUI chargeText;
     public TextMeshProUGUI attackText;
-    public Prompt prompt;
-    public InfoText infoText;
+    // public Prompt prompt;
+    // public InfoText infoText;
     public Option dieOption;
     public bool hasDie = false;
     List<ItemStack> inventory;
@@ -52,7 +52,7 @@ public class Player : LivingEntity
         base.Start();
         playerAnime = GetComponent<Animator>();
         nearBy = new List<IInteractable>();
-        if (prompt == null) prompt = GetComponentInChildren<Prompt>(true);
+        // if (prompt == null) prompt = GetComponentInChildren<Prompt>(true);
         inventory = new List<ItemStack>();
         for (int i = 0; i < inventorySize; i++)
         {
@@ -119,7 +119,7 @@ public class Player : LivingEntity
         }
         else playerAnime.SetBool(isWalking, false);
 
-        if (!DialogController.isShowing && Mouse.current.rightButton.isPressed)
+        if (!isInteracting && Mouse.current.rightButton.isPressed)
         {
 
             playerAnime.SetBool(isCharging, true);
@@ -130,19 +130,16 @@ public class Player : LivingEntity
         // print(lookingOptions);
         if (nearBy.Count > 0)
         {
-
-            prompt.gameObject.SetActive(true);
-            prompt.updateSelected((Keyboard.current.jKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.uKey.wasPressedThisFrame ? 1 : 0));
+            // prompt.updateSelected((Keyboard.current.jKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.uKey.wasPressedThisFrame ? 1 : 0));
             if (Keyboard.current.bKey.wasPressedThisFrame)
             {
-
-                prompt.execute();
+                GameManager.manager.promptManager.execute();
             }
         }
         // else prompt.gameObject.SetActive(false);
 
         if (Keyboard.current.rKey.wasPressedThisFrame) isLookingInfo = !isLookingInfo;
-        infoText.setActive(isLookingInfo);
+        // infoText.setActive(isLookingInfo);
     }
 
     protected override void FixedUpdate()
@@ -151,7 +148,7 @@ public class Player : LivingEntity
         base.FixedUpdate();
         // print(player.linearVelocity);
 
-        if (DialogController.isShowing)
+        if (isInteracting)
         {
             move = Vector2.zero;
             selfRb.linearVelocity = Vector2.zero;
@@ -280,7 +277,8 @@ public class Player : LivingEntity
             if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
             {
                 nearBy.Add(interactable);
-                prompt.updateNearBy(nearBy);
+                GameManager.manager.promptManager.updateNearBy(nearBy);
+                
             }
         }
     }
@@ -290,13 +288,11 @@ public class Player : LivingEntity
 
         if (collision.gameObject.CompareTag("NPC"))
         {
-            print("exited");
             if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
             {
 
                 nearBy.Remove(interactable);
-                print($"{nearBy.Count} npcs nearby.");
-                prompt.updateNearBy(nearBy);
+                GameManager.manager.promptManager.updateNearBy(nearBy);
             }
         }
     }

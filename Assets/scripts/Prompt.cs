@@ -43,9 +43,7 @@ public class Prompt : MonoBehaviour
         if (options == null || options.Count == 0) return;
         if (selected < 0 || selected >= options.Count) selected = 0;
 
-        // **************changed*****************
-        Player who = player != null ? player : UnityEngine.Object.FindFirstObjectByType<Player>();
-        options[selected].onClick(who);
+        nearby[selected].interact(player);
     }
 
     public void updateNearBy(List<IInteractable> interactables)
@@ -76,12 +74,14 @@ public class Prompt : MonoBehaviour
 
     void interactWith(IInteractable interactable)
     {
-        if (DialogController.isShowing) return;
+        // if (DialogController.isShowing) return;
 
-        removeAll();
+        // removeAll();
 
-        var start = interactable.interact(player);
-        if (start != null) updateDialog(start);
+        // var start = interactable.interact(player);
+        // if (start != null) updateDialog(start);
+
+        interactable.interact(player);
     }
 
     void updateDialog(DialogNode node)

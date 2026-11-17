@@ -1,9 +1,9 @@
 
 
-using UnityEngine;
+// using UnityEngine;
 
-public abstract class DialogActionData : ScriptableObject
-{
+// public abstract class DialogActionData : ScriptableObject
+// {
     
-    public abstract void execute(Player player);
-}
+//     public abstract void execute(Player player);
+// }

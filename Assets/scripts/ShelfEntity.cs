@@ -26,12 +26,11 @@ public class ShelfEntity : NPCEntity,IContainer
         }
     }
 
-    public override DialogNode interact(Player player)
-    {
-        return base.interact(player);
+    // public override void interact(Player player)
+    // {
+        
 
-
-    }
+    // }
 
     public void openContainer()
     {

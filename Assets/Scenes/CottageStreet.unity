@@ -4118,6 +4118,119 @@ PolygonCollider2D:
       - {x: 2.0210507, y: -0.55458724}
       - {x: 2.943727, y: 0.17567813}
   m_UseDelaunayMesh: 1
+--- !u!1001 &1826555104
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 157914347525650795, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 382302209298681987, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      propertyPath: m_Name
+      value: teleportal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 382302209298681987, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1826555108}
+    - targetCorrespondingSourceObject: {fileID: 382302209298681987, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1826555107}
+    - targetCorrespondingSourceObject: {fileID: 382302209298681987, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1826555106}
+  m_SourcePrefab: {fileID: 100100000, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+--- !u!1 &1826555105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 382302209298681987, guid: da4d3f1a738f40541b89ac7a5b9b3db4, type: 3}
+  m_PrefabInstance: {fileID: 1826555104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1826555106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826555105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded5a37d369dc824b89c85342c8a9428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BiDirSceneTeleportal
+  from: 
+  to: 
+--- !u!114 &1826555107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826555105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded5a37d369dc824b89c85342c8a9428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BiDirSceneTeleportal
+  from: 
+  to: 
+--- !u!114 &1826555108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826555105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded5a37d369dc824b89c85342c8a9428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BiDirSceneTeleportal
+  from: 
+  to: 
 --- !u!1 &2050523968
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,3 +4393,4 @@ SceneRoots:
   - {fileID: 22340610}
   - {fileID: 1180639902}
   - {fileID: 1609607686}
+  - {fileID: 1826555104}
