@@ -13,36 +13,29 @@ MonoBehaviour:
   m_Name: Keine
   m_EditorClassIdentifier: Assembly-CSharp::DialogContent
   start:
-    rid: 2999462605521420546
-  dialogs: []
+    rid: 2999462627569565771
+  dialogs:
+  - rid: 2999462627569565773
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 2999462605521420546
+    - rid: 2999462627569565771
       type: {class: DialogText, ns: , asm: Assembly-CSharp}
-      data:
-        id: 
-        next:
-          rid: 2999462605521420547
-        position: {x: 0, y: 0}
-        speaker: Keine
-        text: 
-    - rid: 2999462605521420547
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         id: 
         next:
           rid: -2
         position: {x: 0, y: 0}
-        actions:
-        - rid: 2999462605521420548
-    - rid: 2999462605521420548
-      type: {class: GiveItemAction, ns: , asm: Assembly-CSharp}
+        speaker: Keine
+        text: Hello
+    - rid: 2999462627569565773
+      type: {class: DialogText, ns: , asm: Assembly-CSharp}
       data:
-        items:
-        - item: {fileID: 11400000, guid: 05afa7524489f0843bb29aacc73ebfcd, type: 2}
-          maxAmount: 1
-          minAmount: 1
-          chance: 1
+        id: ed7e3ceb-50e5-479f-8986-a94b66c59daf
+        next:
+          rid: -2
+        position: {x: 278.40002, y: 132}
+        speaker: Keine
+        text: This is your gift
