@@ -236,6 +236,7 @@ public class DialogueGraphView : GraphView
 
         // 3. 将算好的 spawnPos 传进去
         evt.menu.AppendAction("Create/Text Node", action => AddNewNode(new DialogText(), spawnPos));
+        evt.menu.AppendAction("Create/Action Node", action => AddNewNode(new ActionNode { actions = new List<DialogAction>() }, spawnPos));
         evt.menu.AppendAction("Create/Option Node", action => AddNewNode(new OptionNode(), spawnPos));
         evt.menu.AppendAction("Create/End Node", action => AddNewNode(new EndNode(), spawnPos));
     }
@@ -259,6 +260,9 @@ public class DialogueGraphView : GraphView
 
         // 第一个节点顺手挂到 start 上，否则保存后整张图没有入口
         if (currentGraph.start == null) currentGraph.start = node;
+
+        // 新建节点后把资源标记为脏，Ctrl+S / Save 才会写盘
+        OnNodeDataChanged();
     }
 
     private GraphViewChange OnGraphViewChanged(GraphViewChange graphViewChange)

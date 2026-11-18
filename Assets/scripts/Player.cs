@@ -33,6 +33,7 @@ public class Player : LivingEntity
     bool isOpeningInventory = false;
     bool isLookingInfo = false;
     bool isInteracting = false;
+    bool isImmune = false;
     Vector2 move;
     Animator playerAnime;
     static readonly int isWalking = Animator.StringToHash("isWalking");
@@ -82,9 +83,11 @@ public class Player : LivingEntity
         if (isOpeningInventory)
         {
 
+            inventoryUI.gameObject.SetActive(true);
             int temp = idxSelected + ((Keyboard.current.upArrowKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.downArrowKey.wasPressedThisFrame ? 1 : 0)) * inventoryUI.hotBarSize;
             idxSelected = (temp >= inventorySize || temp < 0) ? idxSelected : temp;
-        }
+        
+        }else inventoryUI.gameObject.SetActive(false);
         inventoryUI.updateSelected(idxSelected);
 
         for (int i = 0; i < inventoryUI.hotBarSize; i++)
@@ -100,13 +103,6 @@ public class Player : LivingEntity
                 break;
             }
         }
-
-        if (isOpeningInventory)
-        {
-
-            inventoryUI.gameObject.SetActive(true);
-        }
-        else inventoryUI.gameObject.SetActive(false);
         // print(dtBtwHurt);
         if (move.magnitude > 1e-3)
         {
@@ -160,10 +156,7 @@ public class Player : LivingEntity
             return;
         }
 
-        move.x = ((Keyboard.current.dKey.isPressed) ? 1 : 0) - ((Keyboard.current.aKey.isPressed) ? 1 : 0);
-        move.y = ((Keyboard.current.wKey.isPressed) ? 1 : 0) - ((Keyboard.current.sKey.isPressed) ? 1 : 0);
-
-
+        moves();
 
         if (chargeTimer <= 0)
         {
@@ -197,21 +190,6 @@ public class Player : LivingEntity
             attackTimer = attackCD;
         }
 
-        if (!isChargingLogical)
-        {
-
-            if (move.magnitude > 1e-2)
-            {
-
-                move.Normalize();
-                move *= speed;
-
-                selfRb.linearVelocity = move;
-            }
-            else selfRb.linearVelocity = Vector2.zero;
-
-        }
-
         // selecting.x = (Keyboard.current.kKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.hKey.wasPressedThisFrame ? 1 : 0);
         // selecting.y = 
         // if (selecting.magnitude > 1e-2) onPlayerSelectingOptions?.Invoke(this, selecting);
@@ -236,6 +214,26 @@ public class Player : LivingEntity
                 }
             }
         }
+    }
+
+    void moves()
+    {
+
+        if (isChargingLogical || isInteracting) return;
+
+        move.x = ((Keyboard.current.dKey.isPressed) ? 1 : 0) - ((Keyboard.current.aKey.isPressed) ? 1 : 0);
+        move.y = ((Keyboard.current.wKey.isPressed) ? 1 : 0) - ((Keyboard.current.sKey.isPressed) ? 1 : 0);
+
+        if (move.magnitude > 1e-2)
+        {
+
+            move.Normalize();
+            move *= speed;
+
+            selfRb.linearVelocity = move;
+        }
+        else selfRb.linearVelocity = Vector2.zero;
+
     }
 
     void charge()
@@ -278,7 +276,7 @@ public class Player : LivingEntity
             {
                 nearBy.Add(interactable);
                 GameManager.manager.promptManager.updateNearBy(nearBy);
-                
+
             }
         }
     }
@@ -301,6 +299,7 @@ public class Player : LivingEntity
     {
 
         // print(_damage);
+        if (isImmune) return;
         base.hurt(_damage);
 
         if (currentHealth <= 0)
@@ -421,5 +420,16 @@ public class Player : LivingEntity
         //     p.globalInfo.endShow();
         // },"Restart")});
 
+    }
+
+    public void inDialog()
+    {
+        isInteracting = true;
+        isImmune = true;
+    }
+    public void outDialog()
+    {
+        isInteracting = false;
+        isImmune = false;
     }
 }

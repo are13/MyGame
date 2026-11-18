@@ -16,6 +16,8 @@ MonoBehaviour:
     rid: 2999462627569565771
   dialogs:
   - rid: 2999462627569565773
+  - rid: 2999462627569565774
+  - rid: 2999462627569565776
   references:
     version: 2
     RefIds:
@@ -26,7 +28,7 @@ MonoBehaviour:
       data:
         id: 
         next:
-          rid: -2
+          rid: 2999462627569565773
         position: {x: 0, y: 0}
         speaker: Keine
         text: Hello
@@ -35,7 +37,31 @@ MonoBehaviour:
       data:
         id: ed7e3ceb-50e5-479f-8986-a94b66c59daf
         next:
-          rid: -2
+          rid: 2999462627569565774
         position: {x: 278.40002, y: 132}
         speaker: Keine
         text: This is your gift
+    - rid: 2999462627569565774
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        id: 89b01a81-4b43-4dcd-8279-1c5cd92ce90a
+        next:
+          rid: 2999462627569565776
+        position: {x: 585.60004, y: 268.80002}
+        actions:
+        - rid: 2999462627569565775
+    - rid: 2999462627569565775
+      type: {class: GiveItemAction, ns: , asm: Assembly-CSharp}
+      data:
+        items:
+        - item: {fileID: 11400000, guid: 05afa7524489f0843bb29aacc73ebfcd, type: 2}
+          maxAmount: 1
+          minAmount: 1
+          chance: 1
+    - rid: 2999462627569565776
+      type: {class: EndNode, ns: , asm: Assembly-CSharp}
+      data:
+        id: 126ac66d-3f8e-49e2-a74f-5cab1acfcbc6
+        next:
+          rid: -2
+        position: {x: 915.2, y: 332.80002}

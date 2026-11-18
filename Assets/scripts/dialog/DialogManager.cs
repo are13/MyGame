@@ -15,12 +15,13 @@ public class DialogManager : MonoBehaviour
     public UnityEvent onDialogEnd;
     public List<GameObject> gameObjectsToDisable;
     DialogNode currentNode;
-    int currentText;
-
     public void startDialog(DialogContent content, String speaker)
     {
+        
+
         currentNode = content.start;
         gameObjectsToDisable.ForEach(v => v.SetActive(true));
+        onDialogStart?.Invoke();
         print(currentNode);
         updateNext();
     }
@@ -32,7 +33,6 @@ public class DialogManager : MonoBehaviour
         {
             exitDialog();
             currentNode = null;
-            currentText = 0;
         }
 
         if (currentNode is DialogText dialogText)
@@ -40,7 +40,6 @@ public class DialogManager : MonoBehaviour
 
             dialogShow.text = dialogText.text;
             speaker.text = dialogText.speaker;
-            currentText++;
         }
 
         if (currentNode is ActionNode actionNode)
@@ -58,6 +57,8 @@ public class DialogManager : MonoBehaviour
 
 
         }
+
+        currentNode = currentNode.next;
     }
 
     public void exitDialog()
@@ -66,6 +67,7 @@ public class DialogManager : MonoBehaviour
         dialogShow.text = "";
         speaker.text = "";
         resetBgs();
+        onDialogEnd?.Invoke();
     }
 
     public void skip()
