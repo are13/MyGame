@@ -74,6 +74,12 @@ public class Player : LivingEntity
     protected override void Update()
     {
 
+        if (isInteracting && Keyboard.current.bKey.wasPressedThisFrame)
+        {
+            
+            GameManager.manager.dialogManager.updateNext();
+        }
+
         if (Keyboard.current.eKey.wasReleasedThisFrame)
         {
             isOpeningInventory = !isOpeningInventory;

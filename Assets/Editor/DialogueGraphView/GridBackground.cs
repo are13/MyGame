@@ -4,8 +4,6 @@ using UnityEngine.UIElements;
 
 public class GridBackground : VisualElement
 {
-    public new class UxmlFactory : UxmlFactory<GridBackground, UxmlTraits> { }
-
     public GridBackground()
     {
         this.pickingMode = PickingMode.Ignore;

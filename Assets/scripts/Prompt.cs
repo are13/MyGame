@@ -84,12 +84,6 @@ public class Prompt : MonoBehaviour
         interactable.interact(player);
     }
 
-    void updateDialog(DialogNode node)
-    {
-        
-
-    }
-
     string labelOf(IInteractable interactable)
     {
         string label = "";

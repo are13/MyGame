@@ -17,22 +17,23 @@ public class DialogManager : MonoBehaviour
     DialogNode currentNode;
     public void startDialog(DialogContent content, String speaker)
     {
-        
+
 
         currentNode = content.start;
         gameObjectsToDisable.ForEach(v => v.SetActive(true));
         onDialogStart?.Invoke();
-        print(currentNode);
         updateNext();
     }
 
     public void updateNext()
     {
 
+        print(currentNode);
         if (currentNode is EndNode endNode)
         {
             exitDialog();
             currentNode = null;
+            return;
         }
 
         if (currentNode is DialogText dialogText)
@@ -44,16 +45,15 @@ public class DialogManager : MonoBehaviour
 
         if (currentNode is ActionNode actionNode)
         {
-            resetBgs();
             foreach (var action in actionNode.actions)
             {
                 action.execute(GameManager.manager.player);
             }
-            currentNode = actionNode.next;
         }
 
         if (currentNode is OptionNode optionNode)
         {
+            resetBgs();
 
 
         }
