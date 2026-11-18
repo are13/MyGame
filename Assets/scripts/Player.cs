@@ -33,6 +33,7 @@ public class Player : LivingEntity
     bool isOpeningInventory = false;
     bool isLookingInfo = false;
     bool isInteracting = false;
+    state interactingType = state.NONE;
     bool isImmune = false;
     Vector2 move;
     Animator playerAnime;
@@ -74,11 +75,51 @@ public class Player : LivingEntity
     protected override void Update()
     {
 
-        if (isInteracting && Keyboard.current.bKey.wasPressedThisFrame)
+
+        if (Keyboard.current.bKey.wasPressedThisFrame)
         {
-            
-            GameManager.manager.dialogManager.updateNext();
+
+            if (isInteracting)
+            {
+                switch (interactingType)
+                {
+                    case state.DIALOG:
+                        {
+
+                            GameManager.manager.dialogManager.updateNext();
+                            break;
+                        }
+                    case state.CONTAINER:
+                        {
+                            GameManager.manager.containerManager.close();
+                            break;
+                        }
+                }
+            }
+            else
+            {
+
+                if (nearBy.Count > 0)
+                {
+                    if (Keyboard.current.bKey.wasPressedThisFrame)
+                    {
+                        GameManager.manager.promptManager.execute();
+                    }
+                }
+            }
         }
+
+
+
+        // if (GameManager.manager.isOpenAnyContainer)
+        // {
+
+        //     if (Keyboard.current.bKey.wasPressedThisFrame)
+        //     {
+        //         print("close");
+        //         GameManager.manager.containerManager.close();
+        //     }
+        // }
 
         if (Keyboard.current.eKey.wasReleasedThisFrame)
         {
@@ -92,9 +133,15 @@ public class Player : LivingEntity
             inventoryUI.gameObject.SetActive(true);
             int temp = idxSelected + ((Keyboard.current.upArrowKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.downArrowKey.wasPressedThisFrame ? 1 : 0)) * inventoryUI.hotBarSize;
             idxSelected = (temp >= inventorySize || temp < 0) ? idxSelected : temp;
-        
-        }else inventoryUI.gameObject.SetActive(false);
+
+        }
+        else inventoryUI.gameObject.SetActive(false);
         inventoryUI.updateSelected(idxSelected);
+
+        if (GameManager.manager.isFrozen)
+        {
+            return;
+        }
 
         for (int i = 0; i < inventoryUI.hotBarSize; i++)
         {
@@ -129,24 +176,18 @@ public class Player : LivingEntity
 
         if (inventory[idxSelected] != null && inventory[idxSelected].amount <= 0) inventory[idxSelected] = null;
 
-        // print(lookingOptions);
-        if (nearBy.Count > 0)
-        {
-            // prompt.updateSelected((Keyboard.current.jKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.uKey.wasPressedThisFrame ? 1 : 0));
-            if (Keyboard.current.bKey.wasPressedThisFrame)
-            {
-                GameManager.manager.promptManager.execute();
-            }
-        }
-        // else prompt.gameObject.SetActive(false);
+
 
         if (Keyboard.current.rKey.wasPressedThisFrame) isLookingInfo = !isLookingInfo;
-        // infoText.setActive(isLookingInfo);
     }
 
     protected override void FixedUpdate()
     {
 
+        if (GameManager.manager.isFrozen)
+        {
+            return;
+        }
         base.FixedUpdate();
         // print(player.linearVelocity);
 
@@ -195,11 +236,6 @@ public class Player : LivingEntity
             attack();
             attackTimer = attackCD;
         }
-
-        // selecting.x = (Keyboard.current.kKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.hKey.wasPressedThisFrame ? 1 : 0);
-        // selecting.y = 
-        // if (selecting.magnitude > 1e-2) onPlayerSelectingOptions?.Invoke(this, selecting);
-
     }
 
     void attack()
@@ -264,8 +300,6 @@ public class Player : LivingEntity
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-
-
         if (collision.gameObject.CompareTag("item"))
         {
             ItemData temp = collision.gameObject.GetComponent<ItemData>();
@@ -275,29 +309,24 @@ public class Player : LivingEntity
             }
         }
 
-        if (collision.gameObject.CompareTag("NPC"))
+        if (collision.gameObject.TryGetComponent<IInteractable>(out var interactable))
         {
             print($"{collision.tag} entered.");
-            if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
-            {
-                nearBy.Add(interactable);
-                GameManager.manager.promptManager.updateNearBy(nearBy);
+            nearBy.Add(interactable);
+            GameManager.manager.promptManager.updateNearBy(nearBy);
 
-            }
+
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("NPC"))
+        if (collision.gameObject.TryGetComponent<IInteractable>(out var interactable))
         {
-            if (collision.gameObject.GetComponent<NPCEntity>() is IInteractable interactable)
-            {
 
-                nearBy.Remove(interactable);
-                GameManager.manager.promptManager.updateNearBy(nearBy);
-            }
+            nearBy.Remove(interactable);
+            GameManager.manager.promptManager.updateNearBy(nearBy);
         }
     }
 
@@ -431,11 +460,23 @@ public class Player : LivingEntity
     public void inDialog()
     {
         isInteracting = true;
-        isImmune = true;
+        interactingType = state.DIALOG;
     }
     public void outDialog()
     {
         isInteracting = false;
-        isImmune = false;
+        interactingType = state.DIALOG;
     }
+
+    public void setInteracting(state s)
+    {
+        isInteracting = s != state.NONE;
+        interactingType = s;
+    }
+}
+
+public enum state
+{
+
+    DIALOG, CONTAINER, NONE
 }

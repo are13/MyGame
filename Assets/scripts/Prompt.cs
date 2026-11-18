@@ -31,8 +31,6 @@ public class Prompt : MonoBehaviour
     void Awake()
     {
 
-        // options = new List<Option>();s
-        // **************changed*****************
         options = new List<Option>();
         if (player == null) player = GetComponentInParent<Player>();
     }

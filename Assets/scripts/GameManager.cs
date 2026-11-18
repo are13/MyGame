@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,17 +11,25 @@ public class GameManager : MonoBehaviour
 
     public static GameManager manager;
 
+    [Header("Events")]
+    public UnityEvent onGameFrozen;
+    public UnityEvent onGameResume;
+
     [Header("Transition")]
     public Image fading;
     public float transitionTime = 0.5f;
     
-    [Header("Dialog")]
+    [Header("Managers")]
     public Prompt promptManager;
     public DialogManager dialogManager;
+    public ContainerManager containerManager;
+
+    public GameObject frozenUI;
 
     [Header("Player Instance")]
     public Player player;
 
+    public bool isFrozen;
 
     void Awake()
     {
@@ -40,6 +49,21 @@ public class GameManager : MonoBehaviour
         temp.a = 0;
         fading.color = temp;
         dialogManager.resetBgs();
+    }
+
+    public void shouldFrozen(bool isShowFrozenUI)
+    {
+        onGameFrozen?.Invoke();
+        frozenUI.SetActive(isShowFrozenUI);
+        isFrozen = true;
+    }
+
+    public void shouldResume()
+    {
+        onGameResume?.Invoke();
+        frozenUI.SetActive(false);
+        isFrozen = false;
+        print($"is frozen : {isFrozen}");
     }
 
     public void transformScene(String name)

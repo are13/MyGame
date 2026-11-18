@@ -23,6 +23,7 @@ public class DialogManager : MonoBehaviour
         gameObjectsToDisable.ForEach(v => v.SetActive(true));
         onDialogStart?.Invoke();
         updateNext();
+        GameManager.manager.shouldFrozen(false);
     }
 
     public void updateNext()
@@ -68,6 +69,7 @@ public class DialogManager : MonoBehaviour
         speaker.text = "";
         resetBgs();
         onDialogEnd?.Invoke();
+        GameManager.manager.shouldResume();
     }
 
     public void skip()

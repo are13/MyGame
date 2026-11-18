@@ -9,6 +9,8 @@ public interface IContainer
     
     void openContainer();
 
+    void closeContainer();
+
     void updateSelected(int dt);
 
     void updateDisplay(List<ItemStack> items);
