@@ -8,11 +8,12 @@ public class Player : LivingEntity
 {
 
     public float chargeSpeed;
-    public UnityEvent<List<ItemStack>, List<int>> onPlayerInventoryChange;
+    // public UnityEvent<List<ItemStack>, List<int>> onPlayerInventoryChange;
     public UnityEvent<Player, Vector2> onPlayerSelectingOptions;
     public float chargeCD;
     public float attackRange = 1.5f;
     public Inventory inventoryUI;
+    public ItemStorer storer;
     public int inventorySize;
     public GameObject healthBar;
     public TitleInfo titleInfo;
@@ -25,7 +26,7 @@ public class Player : LivingEntity
     // public InfoText infoText;
     public Option dieOption;
     public bool hasDie = false;
-    List<ItemStack> inventory;
+    // List<ItemStack> inventory;
     List<IInteractable> nearBy;
     int idxSelected = 0;
     float chargeTimer;
@@ -54,20 +55,15 @@ public class Player : LivingEntity
         base.Start();
         playerAnime = GetComponent<Animator>();
         nearBy = new List<IInteractable>();
-        // if (prompt == null) prompt = GetComponentInChildren<Prompt>(true);
-        inventory = new List<ItemStack>();
-        for (int i = 0; i < inventorySize; i++)
-        {
-            inventory.Add(null);
-        }
+        storer = new ItemStorer(inventorySize);
 
         //UI
         healthBar.GetComponent<HealthBarUIController>().init(maxHealth, currentHealth);
         inventoryUI.init(inventorySize);
+        inventoryUI.bind(storer);
         attackText.text = "Attack : " + damage;
         speedText.text = "Speed : " + speed;
         chargeText.text = "Charge Speed : " + chargeSpeed;
-        // prompt = new Prompt();
 
     }
 
@@ -143,20 +139,38 @@ public class Player : LivingEntity
             return;
         }
 
-        for (int i = 0; i < inventoryUI.hotBarSize; i++)
-        {
-            if (Keyboard.current[Key.Digit1 + i].wasPressedThisFrame)
-            {
+        // for (int i = 0; i < inventoryUI.hotBarSize; i++)
+        // {
+        //     if (Keyboard.current[Key.Digit1 + i].wasPressedThisFrame)
+        //     {
 
-                ItemStack temp = inventory[idxSelected];
-                inventory[idxSelected] = inventory[i];
-                inventory[i] = temp;
-                // inventoryUI.updateDisplay(inventory,null);
-                onPlayerInventoryChange?.Invoke(inventory, new List<int> { idxSelected, i });
-                break;
+        //         // ItemStack temp = inventory[idxSelected];
+        //         // inventory[idxSelected] = inventory[i];
+        //         // inventory[i] = temp;
+        //         // inventoryUI.updateDisplay(inventory,null);
+        //         // onPlayerInventoryChange?.Invoke(inventory, new List<int> { idxSelected, i });
+
+        //         break;
+        //     }
+        // }
+
+        if (interactingType != state.CONTAINER)
+        {
+            for (int i = 0; i < inventoryUI.hotBarSize; i++)
+            {
+                if (Keyboard.current[Key.Digit1 + i].wasPressedThisFrame)
+                {
+                    inventoryUI.updateSelected(i);
+                    idxSelected = i;
+                    break;
+                }
             }
         }
-        // print(dtBtwHurt);
+        else
+        {
+
+        }
+
         if (move.magnitude > 1e-3)
         {
             playerAnime.SetBool(isWalking, true);
@@ -174,7 +188,7 @@ public class Player : LivingEntity
             playerAnime.SetBool(isCharging, true);
         }
 
-        if (inventory[idxSelected] != null && inventory[idxSelected].amount <= 0) inventory[idxSelected] = null;
+        // if (inventory[idxSelected] != null && inventory[idxSelected].amount <= 0) inventory[idxSelected] = null;
 
 
 
@@ -212,13 +226,14 @@ public class Player : LivingEntity
             if (Mouse.current.rightButton.isPressed)
             {
 
-                if (inventory[idxSelected] != null && inventory[idxSelected].item is IUsable usable)
+                var temp = storer.getItem(idxSelected);
+                if (temp != null && temp is IUsable usable)
                 {
 
-                    usable.use(this, inventory[idxSelected]);
-                    inventory[idxSelected].amount--;
-                    if (inventory[idxSelected].amount < 0) inventory[idxSelected] = null;
-                    onPlayerInventoryChange?.Invoke(inventory, new List<int> { idxSelected });
+                    usable.use(this, temp);
+                    temp.amount--;
+                    if (temp.amount < 0) storer.setItem(idxSelected,null);
+                    // onPlayerInventoryChange?.Invoke(inventory, new List<int> { idxSelected });
                 }
                 else
                 {
@@ -374,49 +389,50 @@ public class Player : LivingEntity
     public bool pickItem(ItemStack itemStack)
     {
 
-        bool isAllPicked = false;
-        List<int> firstIn = new List<int>();
-        for (int i = 0; i < inventorySize; i++)
-        {
-            if (inventory[i] == null)
-            {
+        // bool isAllPicked = false;
+        // List<int> firstIn = new List<int>();
+        // for (int i = 0; i < inventorySize; i++)
+        // {
+        //     if (inventory[i] == null)
+        //     {
 
-                inventory[i] = itemStack;
-                firstIn.Add(i);
-                isAllPicked = true;
-                firstIn.Add(i);
-                break;
-            }
-            else if (itemStack.item.Equals(inventory[i].item))
-            {
+        //         inventory[i] = itemStack;
+        //         firstIn.Add(i);
+        //         isAllPicked = true;
+        //         firstIn.Add(i);
+        //         break;
+        //     }
+        //     else if (itemStack.item.Equals(inventory[i].item))
+        //     {
 
-                int added = inventory[i].amount + itemStack.amount;
-                if (added > inventory[i].item.maxStackNum)
-                {
+        //         int added = inventory[i].amount + itemStack.amount;
+        //         if (added > inventory[i].item.maxStackNum)
+        //         {
 
-                    int d = inventory[i].item.maxStackNum - inventory[i].amount;
-                    if (d > 0) firstIn.Add(i);
-                    itemStack.amount -= d;
-                    inventory[i].amount = inventory[i].item.maxStackNum;
-                }
-                else
-                {
-                    inventory[i].amount += itemStack.amount;
-                    isAllPicked = true;
-                    firstIn.Add(i);
-                    break;
-                }
-            }
-        }
+        //             int d = inventory[i].item.maxStackNum - inventory[i].amount;
+        //             if (d > 0) firstIn.Add(i);
+        //             itemStack.amount -= d;
+        //             inventory[i].amount = inventory[i].item.maxStackNum;
+        //         }
+        //         else
+        //         {
+        //             inventory[i].amount += itemStack.amount;
+        //             isAllPicked = true;
+        //             firstIn.Add(i);
+        //             break;
+        //         }
+        //     }
+        // }
 
-        if (firstIn.Count > 0)
-        {
+        // if (firstIn.Count > 0)
+        // {
 
-            onPlayerInventoryChange?.Invoke(inventory, firstIn);
-            // inventoryUI.updateDisplay(inventory,firstIn);
-        }
+        //     onPlayerInventoryChange?.Invoke(inventory, firstIn);
+        //     // inventoryUI.updateDisplay(inventory,firstIn);
+        // }
 
-        return isAllPicked;
+        // return isAllPicked;
+        return storer.addItem(itemStack);
     }
 
     public void restart()
@@ -427,17 +443,20 @@ public class Player : LivingEntity
         transform.position = Vector2.zero;
     }
 
-    public List<ItemStack> GetInventory()
+    // public List<ItemStack> GetInventory()
+    // {
+
+    //     return inventory;
+    // }
+
+    public ItemStack removeItemWithoutDestory(int idx)
     {
 
-        return inventory;
-    }
-
-    public void removeItemWithoutDestory(int idx)
-    {
-
-        inventory.RemoveAt(idx);
-        onPlayerInventoryChange?.Invoke(inventory, new List<int> { idx });
+        // inventory.RemoveAt(idx);
+        // onPlayerInventoryChange?.Invoke(inventory, new List<int> { idx });
+        var temp = storer.getItem(idx);
+        storer.setItem(idx,null);
+        return temp;
     }
 
     public void dieInfo()

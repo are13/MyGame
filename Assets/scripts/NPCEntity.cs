@@ -1,10 +1,12 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class NPCEntity : MonoBehaviour, IInteractable
 {
 
-    public string id;
+    public int id;
+    public String disPlayname;
     // ***********added**************
     [SerializeReference] public DialogContent dialogs;
     // ***********added**************
@@ -15,7 +17,12 @@ public abstract class NPCEntity : MonoBehaviour, IInteractable
         
     }
 
-    public string getId()
+    public String getDisplayName()
+    {
+        
+        return disPlayname;
+    }
+    public int getId()
     {
         
         return id;
@@ -25,6 +32,6 @@ public abstract class NPCEntity : MonoBehaviour, IInteractable
     {
         if(!hasInit) init();
 
-        GameManager.manager.dialogManager.startDialog(dialogs,id);
+        GameManager.manager.dialogManager.startDialog(dialogs,disPlayname);
     }
 }

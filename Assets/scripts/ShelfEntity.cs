@@ -6,22 +6,34 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShelfEntity : MonoBehaviour, IContainer, IInteractable
+public class ChestEntity : MonoBehaviour, IContainer, IInteractable
 {
 
     public Transform containerLayout;
     public GameObject slotPrefab;
+    public ChestPanel panel;
     public int maxCount;
     public int old_selected = 0;
+    public int id;
     bool hasInit;
-
+    ItemStorer itemStorer;
     List<Slot> slots = new List<Slot>();
-    List<ItemStack> items = new List<ItemStack>();
+    // List<ItemStack> items = new List<ItemStack>();
 
-    public String getId()
+    void Start()
+    {
+        itemStorer = new ItemStorer(maxCount);
+    }
+    public String getDisplayName()
     {
 
         return "Shelf";
+    }
+
+    public int getId()
+    {
+        
+        return id;
     }
 
     public void interact(Player player)
@@ -29,12 +41,6 @@ public class ShelfEntity : MonoBehaviour, IContainer, IInteractable
 
         GameManager.manager.containerManager.open(this);
     }
-
-    // public override void interact(Player player)
-    // {
-
-
-    // }
 
     public void openContainer()
     {
@@ -70,41 +76,26 @@ public class ShelfEntity : MonoBehaviour, IContainer, IInteractable
         containerLayout.gameObject.SetActive(false);
     }
 
-    public void updateDisplay(List<ItemStack> itemStacks)
-    {
+    // public void takeItem(Player player)
+    // {
 
+    //     if (slots[old_selected] != null && player.GetInventory().Count < player.inventorySize - 1)
+    //     {
 
-        for (int i = 0; i < slots.Count; i++)
-        {
-            if (i < itemStacks.Count)
-            {
+    //         player.addItem(items[old_selected]);
+    //         items.RemoveAt(old_selected);
+    //     }
+    // }
 
-                slots[i].updateDisplay(itemStacks[i]);
-            }
-            else slots[i].updateDisplay(null);
-        }
-    }
+    // public void putItem(Player player, int idx)
+    // {
 
-    public void takeItem(Player player)
-    {
+    //     var itemStack = player.GetInventory()[idx];
+    //     if (itemStack != null && items.Count < maxCount - 1)
+    //     {
 
-        if (slots[old_selected] != null && player.GetInventory().Count < player.inventorySize - 1)
-        {
-
-            player.addItem(items[old_selected]);
-            items.RemoveAt(old_selected);
-        }
-    }
-
-    public void putItem(Player player, int idx)
-    {
-
-        var itemStack = player.GetInventory()[idx];
-        if (itemStack != null && items.Count < maxCount - 1)
-        {
-
-            items[old_selected] = itemStack;
-            player.removeItemWithoutDestory(idx);
-        }
-    }
+    //         items[old_selected] = itemStack;
+    //         player.removeItemWithoutDestory(idx);
+    //     }
+    // }
 }

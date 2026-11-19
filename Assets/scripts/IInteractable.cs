@@ -1,11 +1,13 @@
 
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public interface IInteractable
 {
     
-    string getId();
+    int getId();
+    String getDisplayName();
     void interact(Player player);
 }

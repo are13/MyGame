@@ -1,15 +1,19 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Option : MonoBehaviour
+public class Option : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler,IPointerClickHandler
 {
     
     public Image iconImg;
     public Image isSelected;
     public TextMeshProUGUI text;
     public Action<Player> action;
+    public Action<Option> notifySelect;
+    public Action<Option> notifyClick;
 
     public Option init(Action<Player> action,String text="test",Image image = null)
     {
@@ -30,5 +34,23 @@ public class Option : MonoBehaviour
     {
         
         action?.Invoke(player);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        
+        notifySelect?.Invoke(this);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        
+
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        
+        notifyClick?.Invoke(this);
     }
 }

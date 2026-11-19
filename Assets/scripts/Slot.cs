@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +10,8 @@ public class Slot : MonoBehaviour
     public Image icon;
     public Image selected;
     public TextMeshProUGUI amount;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
-    void Start()
-    {
-
-
-    }
+    public ItemStorer itemStorer;
+    public int idx;
 
     public void select(bool isSelected)
     {
@@ -23,19 +19,27 @@ public class Slot : MonoBehaviour
         selected.gameObject.SetActive(isSelected);
     }
 
-    public void updateDisplay(ItemStack itemStack)
+    public void bind(ItemStorer itemStorer, int idx)
+    {
+        if (this.itemStorer != null)
+        {
+            itemStorer.onContainerChanged.RemoveListener(updateDisplay);
+        }
+    }
+
+    public void updateDisplay(int idx)
     {
 
-        if (itemStack == null || itemStack.amount <= 0)
+        var temp = itemStorer.getItem(idx);
+        if (temp == null)
         {
 
-            icon.sprite = defaultIcon;
+            icon.gameObject.SetActive(false);
             return;
         }
 
-        // print(Resources.Load<Sprite>(itemStack.item.icon));
-        // icon.sprite = Resources.Load<Sprite>(itemStack.item.icon);
-        icon.sprite = itemStack.item.icon;
-        amount.text = (itemStack.amount>1)?itemStack.amount+"":"";
+        icon.gameObject.SetActive(true);
+        icon.sprite = temp.item.icon;
+        amount.text = (temp.amount>1)?temp.amount+"":"";
     }
 }

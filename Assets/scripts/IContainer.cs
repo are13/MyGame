@@ -12,6 +12,4 @@ public interface IContainer
     void closeContainer();
 
     void updateSelected(int dt);
-
-    void updateDisplay(List<ItemStack> items);
 }

@@ -18,7 +18,6 @@ public class Prompt : MonoBehaviour
     List<Option> options = new List<Option>();
     int selected = 0;
 
-    // ***********added**************
     readonly List<IInteractable> nearby = new List<IInteractable>();
     bool isInDialog;
 
@@ -26,8 +25,6 @@ public class Prompt : MonoBehaviour
     {
         get { return nearby.Count; }
     }
-    // ***********added**************
-
     void Awake()
     {
 
@@ -37,7 +34,6 @@ public class Prompt : MonoBehaviour
 
     public void execute()
     {
-        // **************changed*****************
         if (options == null || options.Count == 0) return;
         if (selected < 0 || selected >= options.Count) selected = 0;
 
@@ -78,7 +74,7 @@ public class Prompt : MonoBehaviour
 
         // var start = interactable.interact(player);
         // if (start != null) updateDialog(start);
-
+        removeAll();
         interactable.interact(player);
     }
 
@@ -92,7 +88,7 @@ public class Prompt : MonoBehaviour
         else
         {
             
-            label = interactable.getId();
+            label = interactable.getDisplayName();
         }
         if (string.IsNullOrEmpty(label)) label = interactable.GetType().Name;
         // if (string.IsNullOrEmpty(label) && interactable is Component component) label = component.name;
@@ -113,6 +109,8 @@ public class Prompt : MonoBehaviour
         Option temp = Instantiate(optionPrefab, transform, false);
         temp.gameObject.SetActive(true);
         temp.init(action, text);
+        temp.notifySelect = setSelected;
+        temp.notifyClick = setClicked;
         options.Add(temp);
         return temp;
     }
@@ -200,9 +198,7 @@ public class Prompt : MonoBehaviour
         options.Clear();
         selected = 0;
     }
-    void Start()
-    {
-
-
-    }
+    
+    void setSelected(Option option) => updateSelected(options.IndexOf(option) - selected);
+    void setClicked(Option option) => interactWith(nearby[selected]);
 }

@@ -37,55 +37,62 @@ public class Inventory : MonoBehaviour
 
             slots.Add(Instantiate(slot, transform).GetComponent<Slot>());
         }
+    }
 
-        slots[old_selected].select(true);
+    public void bind(ItemStorer itemStorer)
+    {
+        
+        foreach (var s in slots)
+        {
+            s.itemStorer = itemStorer;
+        }
 
+        updateSelected(old_selected);
     }
 
     public void updateSelected(int idx)
     {
 
-        if (idx == old_selected) return;
+        if (idx == old_selected)
+        {
+            slots[idx].select(true);
+            return;
+        }
         slots[old_selected].select(false);
         slots[idx].select(true);
 
+        print($"new : {idx}");
         old_selected = idx;
     }
 
-    public void updateDisplay(List<ItemStack> itemStacks, List<int> changes)
-    {
+    // public void updateDisplay(List<ItemStack> itemStacks, List<int> changes)
+    // {
 
-        if (changes != null)
-        {
+    //     if (changes != null)
+    //     {
 
-            for (int i = 0; i < changes.Count; i++)
-            {
-                if(slots[changes[i]] != null)
-                {
+    //         for (int i = 0; i < changes.Count; i++)
+    //         {
+    //             if(slots[changes[i]] != null)
+    //             {
                     
-                    slots[changes[i]].updateDisplay(itemStacks[changes[i]]);
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < slots.Count; i++)
-            {
-                if (i < itemStacks.Count)
-                {
+    //                 slots[changes[i]].updateDisplay(itemStacks[changes[i]]);
+    //             }
+    //         }
+    //     }
+    //     else
+    //     {
+    //         for (int i = 0; i < slots.Count; i++)
+    //         {
+    //             if (i < itemStacks.Count)
+    //             {
 
-                    slots[i].updateDisplay(itemStacks[i]);
-                }
-                else slots[i].updateDisplay(null);
-            }
-        }
+    //                 slots[i].updateDisplay(itemStacks[i]);
+    //             }
+    //             else slots[i].updateDisplay(null);
+    //         }
+    //     }
 
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    // }
 }

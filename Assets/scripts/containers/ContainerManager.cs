@@ -22,7 +22,6 @@ public class ContainerManager : MonoBehaviour
         GameManager.manager.player.setInteracting(state.CONTAINER);
         GameManager.manager.shouldFrozen(false);
 
-        container.updateDisplay(new System.Collections.Generic.List<ItemStack>());
 
     }
 
