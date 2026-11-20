@@ -1,8 +1,3 @@
-// ***********added**************
-// 选项列表 UI。统一管理"附近 NPC 列表"与"对话选项列表"，并向 DialogController
-// 暴露 addOption / resetSelection / beginDialog / endDialog。
-// 选项行直接克隆 Inspector 上指定的 optionPrefab，不再做模板解析与运行时兜底。
-// ***********added**************
 
 using System;
 using System.Collections.Generic;
@@ -37,7 +32,7 @@ public class Prompt : MonoBehaviour
         if (options == null || options.Count == 0) return;
         if (selected < 0 || selected >= options.Count) selected = 0;
 
-        nearby[selected].interact(player);
+        interactWith(nearby[selected]);
     }
 
     public void updateNearBy(List<IInteractable> interactables)
@@ -68,13 +63,7 @@ public class Prompt : MonoBehaviour
 
     void interactWith(IInteractable interactable)
     {
-        // if (DialogController.isShowing) return;
-
-        // removeAll();
-
-        // var start = interactable.interact(player);
-        // if (start != null) updateDialog(start);
-        removeAll();
+        EnableOrDisAll(false);
         interactable.interact(player);
     }
 
@@ -141,7 +130,6 @@ public class Prompt : MonoBehaviour
 
     public void updateSelected(int dSelected)
     {
-        // **************changed*****************
         if (options == null || options.Count == 0) return;
         int newSelected = Mathf.Clamp(selected + dSelected, 0, options.Count - 1);
         if (newSelected == selected) return;
@@ -180,11 +168,21 @@ public class Prompt : MonoBehaviour
         // temp.GetComponent<Button>().onClick.AddListener(action);
     }
 
+    public void EnableOrDisAll(bool b)
+    {
+        
+        if (options == null) return;
+        foreach (Option option in options)
+        {
+            if (option == null) continue;
+            option.gameObject.SetActive(b);
+        }
+    }
+
     public void removeAll()
     {
 
         if (options == null) return;
-        print($"{options.Count} options to remove");
         foreach (Option option in options)
         {
             print("invoked");

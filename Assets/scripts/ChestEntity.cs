@@ -9,15 +9,12 @@ using UnityEngine;
 public class ChestEntity : MonoBehaviour, IContainer, IInteractable
 {
 
-    public Transform containerLayout;
-    public GameObject slotPrefab;
     public ChestPanel panel;
-    public int maxCount;
-    public int old_selected = 0;
+    // public int old_selected = 0;
     public int id;
     bool hasInit;
+    int maxCount;
     ItemStorer itemStorer;
-    List<Slot> slots = new List<Slot>();
     // List<ItemStack> items = new List<ItemStack>();
 
     void Start()
@@ -45,35 +42,20 @@ public class ChestEntity : MonoBehaviour, IContainer, IInteractable
     public void openContainer()
     {
 
-        containerLayout.gameObject.SetActive(true);
+        panel.gameObject.SetActive(true);
+        panel.init(maxCount);
         
-        if (!hasInit)
-        {
-            for (int i = 0; i < maxCount; i++)
-            {
-
-                slots.Add(Instantiate(slotPrefab, containerLayout.transform).GetComponent<Slot>());
-            }
-
-            slots[old_selected].select(true);
-            hasInit = true;
-        }
     }
 
     public void updateSelected(int idx)
     {
-
-        if (idx == old_selected) return;
-        slots[old_selected].select(false);
-        slots[idx].select(true);
-
-        old_selected = idx;
+        panel.updateSelected(idx);
     }
 
     public void closeContainer()
     {
 
-        containerLayout.gameObject.SetActive(false);
+        panel.gameObject.SetActive(false);
     }
 
     // public void takeItem(Player player)

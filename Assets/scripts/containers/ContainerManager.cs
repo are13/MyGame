@@ -21,8 +21,6 @@ public class ContainerManager : MonoBehaviour
         opens.openContainer();
         GameManager.manager.player.setInteracting(state.CONTAINER);
         GameManager.manager.shouldFrozen(false);
-
-
     }
 
     public void close()
@@ -33,7 +31,10 @@ public class ContainerManager : MonoBehaviour
         container.closeContainer();
         GameManager.manager.shouldResume();
         GameManager.manager.player.setInteracting(state.NONE);
+        GameManager.manager.promptManager.EnableOrDisAll(true);
         container = null;
     }
+
+    public IContainer GetContainer() => container;
 
 }

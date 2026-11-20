@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public Prompt promptManager;
     public DialogManager dialogManager;
     public ContainerManager containerManager;
+    public DragManager dragManager;
 
     public GameObject frozenUI;
 

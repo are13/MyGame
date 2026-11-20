@@ -46,6 +46,7 @@ public class DialogManager : MonoBehaviour
 
         if (currentNode is ActionNode actionNode)
         {
+            print(actionNode.actions.Count);
             foreach (var action in actionNode.actions)
             {
                 action.execute(GameManager.manager.player);

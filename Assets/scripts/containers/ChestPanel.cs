@@ -1,22 +1,51 @@
 
 
 using System.Collections.Generic;
+using UnityEngine;
 
 public class ChestPanel : ContainerPanel
 {
     public int containerSize;
+    // public Transform containerLayout;
     List<Slot> slots;
-
+    
     public override void init(int size)
     {
 
-        for (int i = 0; i < containerSize; i++)
+        if (!hasInit)
         {
+            slots = new List<Slot>(containerSize);
+            for (int i = 0; i < containerSize; i++)
+            {
 
-            slots.Add(Instantiate(slot, transform).GetComponent<Slot>());
+                var temp = Instantiate(slotPrefab, transform).GetComponent<Slot>();
+                temp.idx = i;
+                temp.notifySelect = updateSelected;
+                temp.notifyClick = click;
+                slots.Add(temp);
+            }
+
+            slots[old_selected].select(true);
+            hasInit = true;
         }
 
         slots[old_selected].select(true);
 
+    }
+
+    public void updateSelected(int idx)
+    {
+
+        if (idx == old_selected) return;
+        slots[old_selected].select(false);
+        slots[idx].select(true);
+
+        old_selected = idx;
+    }
+
+    public void click(int idx)
+    {
+        
+        onSelectionClicked?.Invoke(idx);
     }
 }

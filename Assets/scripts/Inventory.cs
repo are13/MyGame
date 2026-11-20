@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Inventory : MonoBehaviour
     public int hotBarSize;
     public int inventorySize;
     public int old_selected = 0;
+    public UnityEvent<int> onSelectionClicked;
 
     // public Transform inventory;
     public Transform hotBar;
@@ -29,13 +31,20 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < hotBarSize; i++)
         {
 
-            slots.Add(Instantiate(slot, hotBar.transform).GetComponent<Slot>());
+            var temp = Instantiate(slot, hotBar.transform).GetComponent<Slot>();
+            temp.idx = i;
+            temp.notifySelect = updateSelected;
+            temp.notifyClick = updateClicked;
+            slots.Add(temp);
         }
 
         for (int i = 0; i < inventorySize; i++)
         {
-
-            slots.Add(Instantiate(slot, transform).GetComponent<Slot>());
+            var temp = Instantiate(slot, transform).GetComponent<Slot>();
+            temp.idx = i + hotBarSize;
+            temp.notifySelect = updateSelected;
+            temp.notifyClick = updateClicked;
+            slots.Add(temp);
         }
     }
 
@@ -61,8 +70,13 @@ public class Inventory : MonoBehaviour
         slots[old_selected].select(false);
         slots[idx].select(true);
 
-        print($"new : {idx}");
         old_selected = idx;
+    }
+
+    public void updateClicked(int idx)
+    {
+
+        onSelectionClicked?.Invoke(idx);
     }
 
     // public void updateDisplay(List<ItemStack> itemStacks, List<int> changes)

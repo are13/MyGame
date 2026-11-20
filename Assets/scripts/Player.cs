@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -70,8 +71,6 @@ public class Player : LivingEntity
     // Update is called once per frame
     protected override void Update()
     {
-
-
         if (Keyboard.current.bKey.wasPressedThisFrame)
         {
 
@@ -127,12 +126,15 @@ public class Player : LivingEntity
         {
 
             inventoryUI.gameObject.SetActive(true);
-            int temp = idxSelected + ((Keyboard.current.upArrowKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.downArrowKey.wasPressedThisFrame ? 1 : 0)) * inventoryUI.hotBarSize;
-            idxSelected = (temp >= inventorySize || temp < 0) ? idxSelected : temp;
-
+            int temp = ((Keyboard.current.upArrowKey.wasPressedThisFrame ? 1 : 0) - (Keyboard.current.downArrowKey.wasPressedThisFrame ? 1 : 0)) * inventoryUI.hotBarSize;
+            if (temp != 0)
+            {
+                temp += idxSelected;
+                idxSelected = (temp >= inventorySize || temp < 0) ? idxSelected : temp;
+                inventoryUI.updateSelected(idxSelected);
+            }
         }
         else inventoryUI.gameObject.SetActive(false);
-        inventoryUI.updateSelected(idxSelected);
 
         if (GameManager.manager.isFrozen)
         {
@@ -232,7 +234,7 @@ public class Player : LivingEntity
 
                     usable.use(this, temp);
                     temp.amount--;
-                    if (temp.amount < 0) storer.setItem(idxSelected,null);
+                    if (temp.amount < 0) storer.setItem(idxSelected, null);
                     // onPlayerInventoryChange?.Invoke(inventory, new List<int> { idxSelected });
                 }
                 else
@@ -455,7 +457,7 @@ public class Player : LivingEntity
         // inventory.RemoveAt(idx);
         // onPlayerInventoryChange?.Invoke(inventory, new List<int> { idx });
         var temp = storer.getItem(idx);
-        storer.setItem(idx,null);
+        storer.setItem(idx, null);
         return temp;
     }
 
@@ -491,6 +493,11 @@ public class Player : LivingEntity
     {
         isInteracting = s != state.NONE;
         interactingType = s;
+    }
+
+    public void setSelected(int idx) {
+        idxSelected = idx;
+        GameManager.manager.dragManager.startDragging(storer,idx,storer.getItem(idx));
     }
 }
 

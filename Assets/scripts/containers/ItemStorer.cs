@@ -13,7 +13,8 @@ public class ItemStorer
     public ItemStorer(int maxCount = 16)
     {
         this.maxCount = maxCount;
-        content = new List<ItemStack>(this.maxCount);
+        content = new List<ItemStack>(maxCount);
+        for(int i=0 ; i<maxCount ; i++) content.Add(null);
     }
 
     public ItemStack getItem(int idx)
@@ -30,10 +31,7 @@ public class ItemStorer
     public void setItem(int idx, ItemStack stack)
     {
 
-        if (stack != null && isVaildSlot(idx))
-        {
-            content[idx] = stack;
-        }
+        if (isVaildSlot(idx)) content[idx] = stack;
     }
 
     public bool addItem(ItemStack stack)
@@ -78,7 +76,7 @@ public class ItemStorer
         return isAllPicked;
     }
 
-    public bool isVaildSlot(int idx) => !(idx >= 0 && idx < content.Count);
+    public bool isVaildSlot(int idx) => idx >= 0 && idx < content.Count;
 
     void notify(List<int> ints)
     {

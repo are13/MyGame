@@ -1,17 +1,20 @@
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using UnityEngine.EventSystems;
 
-public class Slot : MonoBehaviour
+public class Slot : MonoBehaviour ,IPointerEnterHandler,IPointerExitHandler,IPointerClickHandler
 {
 
-    public Sprite defaultIcon;
+    // public Sprite defaultIcon;
     public Image icon;
     public Image selected;
     public TextMeshProUGUI amount;
     public ItemStorer itemStorer;
     public int idx;
+    public Action<int> notifySelect;
+    public Action<int> notifyClick;
 
     public void select(bool isSelected)
     {
@@ -25,6 +28,9 @@ public class Slot : MonoBehaviour
         {
             itemStorer.onContainerChanged.RemoveListener(updateDisplay);
         }
+        itemStorer.onContainerChanged.AddListener(updateDisplay);
+        this.itemStorer = itemStorer;
+        this.idx = idx;
     }
 
     public void updateDisplay(int idx)
@@ -41,5 +47,23 @@ public class Slot : MonoBehaviour
         icon.gameObject.SetActive(true);
         icon.sprite = temp.item.icon;
         amount.text = (temp.amount>1)?temp.amount+"":"";
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        
+        // print("entered");
+        notifySelect?.Invoke(idx);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        
+
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        
+        notifyClick?.Invoke(idx);
     }
 }
