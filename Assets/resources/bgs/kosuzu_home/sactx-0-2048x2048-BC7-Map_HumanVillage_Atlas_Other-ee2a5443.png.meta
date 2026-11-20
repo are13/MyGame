@@ -1,0 +1,1027 @@
+fileFormatVersion: 2
+guid: 29df1466657d1744bae2a155afaedcf5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3148038175682098708
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_0
+  - first:
+      213: -6645868366786301859
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_1
+  - first:
+      213: -3628438073378432236
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_2
+  - first:
+      213: -3801166082589450364
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_3
+  - first:
+      213: -5828820872872472618
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_4
+  - first:
+      213: 7484559560344295150
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_5
+  - first:
+      213: -4686002110715642726
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_6
+  - first:
+      213: 2992570748638669333
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_7
+  - first:
+      213: 7384921195842693821
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_8
+  - first:
+      213: 4100832381274118316
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_9
+  - first:
+      213: 6244316855894677127
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_10
+  - first:
+      213: 3244882108146138493
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_11
+  - first:
+      213: -6907239626471156773
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_12
+  - first:
+      213: 7764496247040020992
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_13
+  - first:
+      213: 3612537725256005582
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_14
+  - first:
+      213: -5862988402995531501
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_15
+  - first:
+      213: 8693940082058354753
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_16
+  - first:
+      213: 8763338402510263241
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_17
+  - first:
+      213: -4155074332493123492
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_18
+  - first:
+      213: 6583277789219909812
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_19
+  - first:
+      213: -1383168031331306423
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_20
+  - first:
+      213: 6963820209772796949
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_21
+  - first:
+      213: -7113519603729263623
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_22
+  - first:
+      213: 8506060149778740198
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_23
+  - first:
+      213: -369670335640647990
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_24
+  - first:
+      213: -5467241338904055049
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_25
+  - first:
+      213: -6309030487935018904
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_26
+  - first:
+      213: -781668013358531132
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_27
+  - first:
+      213: 1506835976127085535
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_28
+  - first:
+      213: -4417675475409570694
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_29
+  - first:
+      213: -4734016253124938989
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_30
+  - first:
+      213: 7075891914558530753
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_31
+  - first:
+      213: 1765537138157613143
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_32
+  - first:
+      213: -6835437772544017829
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_33
+  - first:
+      213: -5596715740525779713
+    second: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_34
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_0
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1955
+        width: 58
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41676e0ba0410bb20800000000000000
+      internalID: 3148038175682098708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_1
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1956
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5072b58ee125c3a0800000000000000
+      internalID: -6645868366786301859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_2
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1956
+        width: 37
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b96caebc235adc0800000000000000
+      internalID: -3628438073378432236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_3
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1923
+        width: 127
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f1efa569b8f3bc0800000000000000
+      internalID: -3801166082589450364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_4
+      rect:
+        serializedVersion: 2
+        x: 1715
+        y: 1659
+        width: 252
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dfcd0d6c4edb1fa0800000000000000
+      internalID: -5828820872872472618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1816
+        width: 599
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee65396e34f7ed760800000000000000
+      internalID: 7484559560344295150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_6
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 1925
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c301668e9f7feb0800000000000000
+      internalID: -4686002110715642726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_7
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1930
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a25d59d3fb78920800000000000000
+      internalID: 2992570748638669333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_8
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1903
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbae47c53b28c7660800000000000000
+      internalID: 7384921195842693821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_9
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1930
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca85349d25519e830800000000000000
+      internalID: 4100832381274118316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_10
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1903
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786169cb81548a650800000000000000
+      internalID: 6244316855894677127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_11
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 1905
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d3212d513280d20800000000000000
+      internalID: 3244882108146138493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_12
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1930
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd35fa5e72e8420a0800000000000000
+      internalID: -6907239626471156773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_13
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1926
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0029ca8d23801cb60800000000000000
+      internalID: 7764496247040020992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_14
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 1833
+        width: 127
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7f49bcbef422230800000000000000
+      internalID: 3612537725256005582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_15
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1816
+        width: 85
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31177356c1b72aea0800000000000000
+      internalID: -5862988402995531501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_16
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1829
+        width: 11
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1406e91317417a870800000000000000
+      internalID: 8693940082058354753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1198
+        width: 540
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3d920d8d1ad9970800000000000000
+      internalID: 8763338402510263241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_18
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1510
+        width: 400
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50776cb8e53656c0800000000000000
+      internalID: -4155074332493123492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_19
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1462
+        width: 372
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0fb2405408c5b50800000000000000
+      internalID: 6583277789219909812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_20
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1324
+        width: 244
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94432dbf0000ecce0800000000000000
+      internalID: -1383168031331306423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_21
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 1324
+        width: 308
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c913bb59574a060800000000000000
+      internalID: 6963820209772796949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_22
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1195
+        width: 483
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f390f40c93b74d90800000000000000
+      internalID: -7113519603729263623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_23
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1115
+        width: 433
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e3faa1a3a89b0670800000000000000
+      internalID: 8506060149778740198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_24
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 1035
+        width: 433
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6c320d9caaedaf0800000000000000
+      internalID: -369670335640647990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 685
+        width: 428
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2fa4d08f47024b0800000000000000
+      internalID: -5467241338904055049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_26
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 683
+        width: 431
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8681689a232d178a0800000000000000
+      internalID: -6309030487935018904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_27
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 620
+        width: 443
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdba735515f625f0800000000000000
+      internalID: -781668013358531132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_28
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 623
+        width: 303
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb75d3365b59e410800000000000000
+      internalID: 1506835976127085535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_29
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 509
+        height: 679
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74f14b9f8341b2c0800000000000000
+      internalID: -4417675475409570694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_30
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 199
+        width: 36
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313ff87bc456d4eb0800000000000000
+      internalID: -4734016253124938989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_31
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 203
+        width: 38
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4e154e43e923260800000000000000
+      internalID: 7075891914558530753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_32
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 0
+        width: 490
+        height: 596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750f4a54ca2708810800000000000000
+      internalID: 1765537138157613143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_33
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 0
+        width: 461
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5af933cf85a321a0800000000000000
+      internalID: -6835437772544017829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_34
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 0
+        width: 429
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4af19cfa87452b0800000000000000
+      internalID: -5596715740525779713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_0: 3148038175682098708
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_1: -6645868366786301859
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_10: 6244316855894677127
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_11: 3244882108146138493
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_12: -6907239626471156773
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_13: 7764496247040020992
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_14: 3612537725256005582
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_15: -5862988402995531501
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_16: 8693940082058354753
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_17: 8763338402510263241
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_18: -4155074332493123492
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_19: 6583277789219909812
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_2: -3628438073378432236
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_20: -1383168031331306423
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_21: 6963820209772796949
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_22: -7113519603729263623
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_23: 8506060149778740198
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_24: -369670335640647990
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_25: -5467241338904055049
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_26: -6309030487935018904
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_27: -781668013358531132
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_28: 1506835976127085535
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_29: -4417675475409570694
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_3: -3801166082589450364
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_30: -4734016253124938989
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_31: 7075891914558530753
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_32: 1765537138157613143
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_33: -6835437772544017829
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_34: -5596715740525779713
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_4: -5828820872872472618
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_5: 7484559560344295150
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_6: -4686002110715642726
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_7: 2992570748638669333
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_8: 7384921195842693821
+      sactx-0-2048x2048-BC7-Map_HumanVillage_Atlas_Other-ee2a5443_9: 4100832381274118316
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

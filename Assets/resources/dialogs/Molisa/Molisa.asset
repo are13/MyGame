@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22d3d3a502ad864fbf26c4486b3471a, type: 3}
+  m_Name: Molisa
+  m_EditorClassIdentifier: Assembly-CSharp::DialogContent
+  start:
+    rid: 2999462676692467783
+  dialogs:
+  - rid: 2999462676692467783
+  - rid: 2999462676692467784
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 2999462676692467783
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        id: a04e9626-1fe0-407e-82e9-343c7db47984
+        next:
+          rid: 2999462676692467784
+        position: {x: 213.6, y: 188.80002}
+        actions:
+        - rid: 2999462676692467788
+    - rid: 2999462676692467784
+      type: {class: EndNode, ns: , asm: Assembly-CSharp}
+      data:
+        id: 33976a1c-db25-40b9-9e09-28e6706e0b44
+        next:
+          rid: -2
+        position: {x: 547.2, y: 188.8}
+    - rid: 2999462676692467788
+      type: {class: DropItemAction, ns: , asm: Assembly-CSharp}
+      data:
+        itemDatas:
+        - item: {fileID: 11400000, guid: 36f1d78852ae0f64dac534dbd6ccd6a3, type: 2}
+          maxAmount: 1
+          minAmount: 1
+          chance: 1
+        pos: []
+        isHere: 1

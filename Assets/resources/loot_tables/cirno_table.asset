@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: cirno_table
+  m_EditorClassIdentifier: Assembly-CSharp::LootTable
+  loots:
+  - item: {fileID: 11400000, guid: 36f1d78852ae0f64dac534dbd6ccd6a3, type: 2}
+    maxAmount: 1
+    minAmount: 1
+    chance: 0.475
+  - item: {fileID: 11400000, guid: af30a9376f933404aa3ce51c652c6ae0, type: 2}
+    maxAmount: 1
+    minAmount: 1
+    chance: 0.475

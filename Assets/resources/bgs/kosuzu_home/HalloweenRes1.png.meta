@@ -1,0 +1,1599 @@
+fileFormatVersion: 2
+guid: 0bce0fa0dba295440924321b653ad1a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7229878245197421391
+    second: HalloweenRes1_0
+  - first:
+      213: -6061615786633199142
+    second: HalloweenRes1_1
+  - first:
+      213: 4839204001154775809
+    second: HalloweenRes1_2
+  - first:
+      213: 8124529717278214282
+    second: HalloweenRes1_3
+  - first:
+      213: -6523636747214437609
+    second: HalloweenRes1_4
+  - first:
+      213: -5837244543589592243
+    second: HalloweenRes1_5
+  - first:
+      213: 1395318112048914708
+    second: HalloweenRes1_6
+  - first:
+      213: 4927020433102964217
+    second: HalloweenRes1_7
+  - first:
+      213: -2921293746620457194
+    second: HalloweenRes1_8
+  - first:
+      213: 1533316045769458320
+    second: HalloweenRes1_9
+  - first:
+      213: 6858043779377037742
+    second: HalloweenRes1_10
+  - first:
+      213: -8935528887055860685
+    second: HalloweenRes1_11
+  - first:
+      213: 1200957490108287699
+    second: HalloweenRes1_12
+  - first:
+      213: 1525496876390657001
+    second: HalloweenRes1_13
+  - first:
+      213: 2773789605948733732
+    second: HalloweenRes1_14
+  - first:
+      213: 5564216298179977467
+    second: HalloweenRes1_15
+  - first:
+      213: 2110099976519497111
+    second: HalloweenRes1_16
+  - first:
+      213: -4945024779074757999
+    second: HalloweenRes1_17
+  - first:
+      213: -1543218157315725335
+    second: HalloweenRes1_18
+  - first:
+      213: -7267702670451977917
+    second: HalloweenRes1_19
+  - first:
+      213: 6216738396293492301
+    second: HalloweenRes1_20
+  - first:
+      213: -3684950812865130708
+    second: HalloweenRes1_21
+  - first:
+      213: 2928107056505915669
+    second: HalloweenRes1_22
+  - first:
+      213: -7485678153381311794
+    second: HalloweenRes1_23
+  - first:
+      213: 528236562170338350
+    second: HalloweenRes1_24
+  - first:
+      213: 3560192088509361858
+    second: HalloweenRes1_25
+  - first:
+      213: 3399048755012652676
+    second: HalloweenRes1_26
+  - first:
+      213: 2485641192944177649
+    second: HalloweenRes1_27
+  - first:
+      213: -7831828088133612755
+    second: HalloweenRes1_28
+  - first:
+      213: -7314786450463159535
+    second: HalloweenRes1_29
+  - first:
+      213: 8090708802444772491
+    second: HalloweenRes1_30
+  - first:
+      213: 4662704979423360332
+    second: HalloweenRes1_31
+  - first:
+      213: -8372718909004252662
+    second: HalloweenRes1_32
+  - first:
+      213: 719913398787574875
+    second: HalloweenRes1_33
+  - first:
+      213: -5280082960853859637
+    second: HalloweenRes1_34
+  - first:
+      213: 2374528614426250746
+    second: HalloweenRes1_35
+  - first:
+      213: -7978050358464810593
+    second: HalloweenRes1_36
+  - first:
+      213: -2698803210752786261
+    second: HalloweenRes1_37
+  - first:
+      213: -7407930396104881823
+    second: HalloweenRes1_38
+  - first:
+      213: 9180082878699454129
+    second: HalloweenRes1_39
+  - first:
+      213: -6969987903056004910
+    second: HalloweenRes1_40
+  - first:
+      213: -4534210970727694174
+    second: HalloweenRes1_41
+  - first:
+      213: -2969362815823230250
+    second: HalloweenRes1_42
+  - first:
+      213: -4722542704961839977
+    second: HalloweenRes1_43
+  - first:
+      213: -3080485883487978882
+    second: HalloweenRes1_44
+  - first:
+      213: 253984537452400042
+    second: HalloweenRes1_45
+  - first:
+      213: -7640195782793600190
+    second: HalloweenRes1_46
+  - first:
+      213: -115508215705560434
+    second: HalloweenRes1_47
+  - first:
+      213: 8039617749632055506
+    second: HalloweenRes1_48
+  - first:
+      213: -5561533008358456624
+    second: HalloweenRes1_49
+  - first:
+      213: 8733629802464252477
+    second: HalloweenRes1_50
+  - first:
+      213: -7009517236061344876
+    second: HalloweenRes1_51
+  - first:
+      213: 7371033285605956027
+    second: HalloweenRes1_52
+  - first:
+      213: -5624365434540741435
+    second: HalloweenRes1_53
+  - first:
+      213: -2301853904591283767
+    second: HalloweenRes1_54
+  - first:
+      213: 3308898925047255150
+    second: HalloweenRes1_55
+  - first:
+      213: -5691484048516083205
+    second: HalloweenRes1_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HalloweenRes1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 394
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4eea1aa005aab90800000000000000
+      internalID: -7229878245197421391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 392
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad104d0de80d0eba0800000000000000
+      internalID: -6061615786633199142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 394
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bba7c566e482340800000000000000
+      internalID: 4839204001154775809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 338
+        width: 47
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8809757bb020c070800000000000000
+      internalID: 8124529717278214282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 345
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 713499e21f26775a0800000000000000
+      internalID: -6523636747214437609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_5
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 334
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d435140c301fdfea0800000000000000
+      internalID: -5837244543589592243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 333
+        width: 65
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41128512e6a2d5310800000000000000
+      internalID: 1395318112048914708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_7
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 310
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5813cbafa406440800000000000000
+      internalID: 4927020433102964217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_8
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 264
+        width: 95
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f1e1ca0da7577d0800000000000000
+      internalID: -2921293746620457194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 300
+        width: 44
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092ce7cd1de674510800000000000000
+      internalID: 1533316045769458320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 294
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea188db5b7aac2f50800000000000000
+      internalID: 6858043779377037742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_11
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 267
+        width: 67
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c3bc6d1df9ef380800000000000000
+      internalID: -8935528887055860685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 265
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dacf3c6978aaa010800000000000000
+      internalID: 1200957490108287699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 216
+        width: 88
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebab3f9357ab2510800000000000000
+      internalID: 1525496876390657001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 265
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429be3053fa7e7620800000000000000
+      internalID: 2773789605948733732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 268
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0e4722e31183d40800000000000000
+      internalID: 5564216298179977467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_16
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 258
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7953105bfb4984d10800000000000000
+      internalID: 2110099976519497111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_17
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 258
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a9ebdc92ebf5bb0800000000000000
+      internalID: -4945024779074757999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_18
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 258
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e763422343659ae0800000000000000
+      internalID: -1543218157315725335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_19
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 152
+        width: 98
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3415d8a5deee32b90800000000000000
+      internalID: -7267702670451977917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 175
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4eea9c32aa464650800000000000000
+      internalID: 6216738396293492301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 192
+        width: 83
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f036862cc6cdcc0800000000000000
+      internalID: -3684950812865130708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_22
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 188
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5198957aad9b2a820800000000000000
+      internalID: 2928107056505915669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_23
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 218
+        width: 25
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca0ecc51678d1890800000000000000
+      internalID: -7485678153381311794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_24
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 216
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c5985ca5ca45700800000000000000
+      internalID: 528236562170338350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_25
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 220
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cea1cf77d7586130800000000000000
+      internalID: 3560192088509361858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_26
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 216
+        width: 23
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e43c075d8db2f20800000000000000
+      internalID: 3399048755012652676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_27
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 218
+        width: 19
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f11488de75ce7220800000000000000
+      internalID: 2485641192944177649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_28
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 218
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b8ed049d1cf4390800000000000000
+      internalID: -7831828088133612755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_29
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 214
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b8d4c8a78ac7a90800000000000000
+      internalID: -7314786450463159535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_30
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 222
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b84c8d61ac8f74070800000000000000
+      internalID: 8090708802444772491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_31
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 221
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4579f6897145b040800000000000000
+      internalID: 4662704979423360332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_32
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 222
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0afa9843802ecb80800000000000000
+      internalID: -8372718909004252662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_33
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 108
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c07c30c65adf900800000000000000
+      internalID: 719913398787574875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 116
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc286bda58069b6b0800000000000000
+      internalID: -5280082960853859637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_35
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 117
+        width: 81
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd80eba13504f020800000000000000
+      internalID: 2374528614426250746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_36
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 128
+        width: 94
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91f68fe775484190800000000000000
+      internalID: -7978050358464810593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_37
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 143
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0856857cceb8ad0800000000000000
+      internalID: -2698803210752786261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_38
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 143
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169895bbd8eb13990800000000000000
+      internalID: -7407930396104881823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_39
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 147
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1beb6817db4366f70800000000000000
+      internalID: 9180082878699454129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_40
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 145
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d8b3954ee0a54f90800000000000000
+      internalID: -6969987903056004910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_41
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 145
+        width: 37
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0c819352f3311c0800000000000000
+      internalID: -4534210970727694174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_42
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 148
+        width: 38
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6da4a995044bac6d0800000000000000
+      internalID: -2969362815823230250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_43
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 7
+        width: 99
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c13225e68267eb0800000000000000
+      internalID: -4722542704961839977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_44
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 11
+        width: 97
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7af71bf86aef35d0800000000000000
+      internalID: -3080485883487978882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_45
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 12
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadca455795568300800000000000000
+      internalID: 253984537452400042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_46
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 62
+        width: 51
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24366204a6298f590800000000000000
+      internalID: -7640195782793600190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_47
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 64
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a1b3ac3e1a56ef0800000000000000
+      internalID: -115508215705560434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_48
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 61
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d87eb06fb5729f60800000000000000
+      internalID: 8039617749632055506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_49
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 62
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d24f26f13771d2b0800000000000000
+      internalID: -5561533008358456624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_50
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 20
+        width: 72
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3295a75806143970800000000000000
+      internalID: 8733629802464252477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_51
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 17
+        width: 69
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49be599363139be90800000000000000
+      internalID: -7009517236061344876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_52
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 30
+        width: 69
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb99f1848bb2b4660800000000000000
+      internalID: 7371033285605956027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_53
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 22
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cca63bbf6d32f1b0800000000000000
+      internalID: -5624365434540741435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_54
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 17
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c99dfbc11c2e00e0800000000000000
+      internalID: -2301853904591283767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_55
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 18
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e601d118a029bed20800000000000000
+      internalID: 3308898925047255150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HalloweenRes1_56
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 19
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf19563a969c301b0800000000000000
+      internalID: -5691484048516083205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HalloweenRes1_0: -7229878245197421391
+      HalloweenRes1_1: -6061615786633199142
+      HalloweenRes1_10: 6858043779377037742
+      HalloweenRes1_11: -8935528887055860685
+      HalloweenRes1_12: 1200957490108287699
+      HalloweenRes1_13: 1525496876390657001
+      HalloweenRes1_14: 2773789605948733732
+      HalloweenRes1_15: 5564216298179977467
+      HalloweenRes1_16: 2110099976519497111
+      HalloweenRes1_17: -4945024779074757999
+      HalloweenRes1_18: -1543218157315725335
+      HalloweenRes1_19: -7267702670451977917
+      HalloweenRes1_2: 4839204001154775809
+      HalloweenRes1_20: 6216738396293492301
+      HalloweenRes1_21: -3684950812865130708
+      HalloweenRes1_22: 2928107056505915669
+      HalloweenRes1_23: -7485678153381311794
+      HalloweenRes1_24: 528236562170338350
+      HalloweenRes1_25: 3560192088509361858
+      HalloweenRes1_26: 3399048755012652676
+      HalloweenRes1_27: 2485641192944177649
+      HalloweenRes1_28: -7831828088133612755
+      HalloweenRes1_29: -7314786450463159535
+      HalloweenRes1_3: 8124529717278214282
+      HalloweenRes1_30: 8090708802444772491
+      HalloweenRes1_31: 4662704979423360332
+      HalloweenRes1_32: -8372718909004252662
+      HalloweenRes1_33: 719913398787574875
+      HalloweenRes1_34: -5280082960853859637
+      HalloweenRes1_35: 2374528614426250746
+      HalloweenRes1_36: -7978050358464810593
+      HalloweenRes1_37: -2698803210752786261
+      HalloweenRes1_38: -7407930396104881823
+      HalloweenRes1_39: 9180082878699454129
+      HalloweenRes1_4: -6523636747214437609
+      HalloweenRes1_40: -6969987903056004910
+      HalloweenRes1_41: -4534210970727694174
+      HalloweenRes1_42: -2969362815823230250
+      HalloweenRes1_43: -4722542704961839977
+      HalloweenRes1_44: -3080485883487978882
+      HalloweenRes1_45: 253984537452400042
+      HalloweenRes1_46: -7640195782793600190
+      HalloweenRes1_47: -115508215705560434
+      HalloweenRes1_48: 8039617749632055506
+      HalloweenRes1_49: -5561533008358456624
+      HalloweenRes1_5: -5837244543589592243
+      HalloweenRes1_50: 8733629802464252477
+      HalloweenRes1_51: -7009517236061344876
+      HalloweenRes1_52: 7371033285605956027
+      HalloweenRes1_53: -5624365434540741435
+      HalloweenRes1_54: -2301853904591283767
+      HalloweenRes1_55: 3308898925047255150
+      HalloweenRes1_56: -5691484048516083205
+      HalloweenRes1_6: 1395318112048914708
+      HalloweenRes1_7: 4927020433102964217
+      HalloweenRes1_8: -2921293746620457194
+      HalloweenRes1_9: 1533316045769458320
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

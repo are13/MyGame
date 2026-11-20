@@ -17,12 +17,12 @@ public class Level1Key : Item, IUsable
             var temp = InfoText.generate();
             temp.color = Color.green;
             temp.text = "You win!";
-            player.infoText.addInfo(temp);
+            // player.infoText.addInfo(temp);
 
             var temp1 = InfoText.generate();
             temp1.color = Color.blue;
             temp1.text = "Next level is coming...";
-            player.infoText.addInfo(temp1);
+            // player.infoText.addInfo(temp1);
 
             GameManager.Instantiate(Resources.Load<GameObject>(portal),new Vector3(player.transform.position.x,player.transform.position.y-3,player.transform.position.z),Quaternion.identity);
         }

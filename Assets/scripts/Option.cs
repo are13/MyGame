@@ -1,65 +1,55 @@
 using System;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Option : MonoBehaviour
+public class Option : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler,IPointerClickHandler
 {
     
     public Image iconImg;
     public Image isSelected;
     public TextMeshProUGUI text;
     public Action<Player> action;
-    public int id;
+    public Action<Option> notifySelect;
+    public Action<Option> notifyClick;
 
     public Option init(Action<Player> action,String text="test",Image image = null)
     {
         
         this.action = action;
-        this.text.text = text;
+        if (this.text != null) this.text.text = text;
         if(image != null) iconImg = image;
 
         return this;
     }
 
-    public void setId(int id)
-    {
-        
-        this.id = id;
-    }
-
     public void select(bool b)
     {
         
-        isSelected.gameObject.SetActive(b);
+        if (isSelected != null) isSelected.gameObject.SetActive(b);
     }
-
-    // public void updateDisplay()
-    // {
-        
-    //     iconImg = Resources.Load<Image>(this.icon);
-    // }
-
     public virtual void onClick(Player player)
     {
         
         action?.Invoke(player);
     }
-    public override bool Equals(object obj)
+
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        if(obj is Option option)
-        {
-            
-            return this.id == option.id;
-        }
-        return false;
+        
+        notifySelect?.Invoke(this);
     }
-    
-    // override object.GetHashCode
-    public override int GetHashCode()
+
+    public void OnPointerExit(PointerEventData eventData)
     {
-        // TODO: write your implementation of GetHashCode() here
-        return id;
+        
+
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        
+        notifyClick?.Invoke(this);
     }
 }
