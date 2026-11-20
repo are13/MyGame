@@ -1,21 +1,23 @@
-
-
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class ItemStorer
 {
 
-    public UnityEvent<int> onContainerChanged;
+    public UnityEvent<int> onContainerChanged = new UnityEvent<int>();
+
     readonly List<ItemStack> content;
-    int maxCount;
+
+    public int maxCount => content.Count;
 
     public ItemStorer(int maxCount = 16)
     {
-        this.maxCount = maxCount;
         content = new List<ItemStack>(maxCount);
-        for(int i=0 ; i<maxCount ; i++) content.Add(null);
+        for (int i = 0; i < maxCount; i++) content.Add(null);
     }
+
+    public bool isVaildSlot(int idx) => idx >= 0 && idx < content.Count;
 
     public ItemStack getItem(int idx)
     {
@@ -31,58 +33,41 @@ public class ItemStorer
     public void setItem(int idx, ItemStack stack)
     {
 
-        if (isVaildSlot(idx)) content[idx] = stack;
+        if (!isVaildSlot(idx)) return;
+
+        content[idx] = stack;
+        notify(idx);
     }
+
+    public void notify(int idx) => onContainerChanged?.Invoke(idx);
 
     public bool addItem(ItemStack stack)
     {
 
-        bool isAllPicked = false;
-        List<int> changed = new List<int>();
-        for (int i = 0; i < maxCount; i++)
+        if (stack == null || stack.amount <= 0) return true;
+
+        for (int i = 0; i < content.Count && stack.amount > 0; i++)
         {
-            if (content[i] == null)
-            {
+            var slot = content[i];
+            if (slot == null || !slot.item.Equals(stack.item)) continue;
+            if (slot.amount >= slot.item.maxStackNum) continue;
 
-                content[i] = stack;
-                changed.Add(i);
-                isAllPicked = true;
-                changed.Add(i);
-                break;
-            }
-            else if (stack.item.Equals(content[i].item))
-            {
-
-                int added = content[i].amount + stack.amount;
-                if (added > content[i].item.maxStackNum)
-                {
-
-                    int d = content[i].item.maxStackNum - content[i].amount;
-                    if (d > 0) changed.Add(i);
-                    stack.amount -= d;
-                    content[i].amount = content[i].item.maxStackNum;
-                }
-                else
-                {
-                    content[i].amount += stack.amount;
-                    isAllPicked = true;
-                    changed.Add(i);
-                    break;
-                }
-            }
+            int move = Mathf.Min(slot.item.maxStackNum - slot.amount, stack.amount);
+            slot.amount += move;
+            stack.amount -= move;
+            notify(i);
         }
 
-        notify(changed);
-        return isAllPicked;
-    }
-
-    public bool isVaildSlot(int idx) => idx >= 0 && idx < content.Count;
-
-    void notify(List<int> ints)
-    {
-        foreach (var changes in ints)
+        for (int i = 0; i < content.Count && stack.amount > 0; i++)
         {
-            onContainerChanged?.Invoke(changes);
+            if (content[i] != null) continue;
+
+            int move = Mathf.Min(stack.item.maxStackNum, stack.amount);
+            content[i] = new ItemStack(stack.item, move);
+            stack.amount -= move;
+            notify(i);
         }
+
+        return stack.amount <= 0;
     }
 }

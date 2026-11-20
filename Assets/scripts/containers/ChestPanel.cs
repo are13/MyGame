@@ -5,15 +5,17 @@ using UnityEngine;
 
 public class ChestPanel : ContainerPanel
 {
-    public int containerSize;
+    int containerSize;
     // public Transform containerLayout;
     List<Slot> slots;
     
-    public override void init(int size)
+    public override void init(int size , ItemStorer itemStorer)
     {
 
         if (!hasInit)
         {
+
+            containerSize = size;
             slots = new List<Slot>(containerSize);
             for (int i = 0; i < containerSize; i++)
             {
@@ -22,6 +24,7 @@ public class ChestPanel : ContainerPanel
                 temp.idx = i;
                 temp.notifySelect = updateSelected;
                 temp.notifyClick = click;
+                temp.bind(itemStorer,i);
                 slots.Add(temp);
             }
 

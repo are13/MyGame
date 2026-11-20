@@ -53,7 +53,7 @@ public class Inventory : MonoBehaviour
         
         foreach (var s in slots)
         {
-            s.itemStorer = itemStorer;
+            s.bind(itemStorer, s.idx);
         }
 
         updateSelected(old_selected);
@@ -61,6 +61,10 @@ public class Inventory : MonoBehaviour
 
     public void updateSelected(int idx)
     {
+
+        if (slots.Count == 0) return;
+
+        idx = Mathf.Clamp(idx, 0, slots.Count - 1);
 
         if (idx == old_selected)
         {

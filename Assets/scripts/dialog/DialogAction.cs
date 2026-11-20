@@ -25,14 +25,21 @@ public class GiveItemAction : DialogAction
     }
 }
 
+
 [Serializable]
-public class openContainerAction : DialogAction
+public class DropItemAction : DialogAction
 {
 
-    public override void execute(Player player, GameObject gameObject)
+    public List<LootData> itemDatas;
+    public List<Vector2> pos;
+    public bool isHere = false;
+    public override void execute(Player player, GameObject gameObject = null)
     {
         
-        gameObject.GetComponentInChildren<IContainer>().openContainer();
+        for (int i = 0; i < itemDatas.Count; i++)
+        {
+            GameManager.manager.spawnItem(itemDatas[i],isHere?player.transform.position:pos[i]);
+        }
+        
     }
-
 }

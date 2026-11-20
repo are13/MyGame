@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public DialogManager dialogManager;
     public ContainerManager containerManager;
     public DragManager dragManager;
+    public ItemEntityManager itemEntityManager;
 
     public GameObject frozenUI;
 
@@ -107,6 +108,21 @@ public class GameManager : MonoBehaviour
 
         temp.a = to;
         fading.color = temp;
+    }
+
+    public void spawnItem(LootData loot, Vector2 pos)
+    {
+
+        print($"passed {pos}");
+        var temp = Instantiate<GameObject>(loot.item.preFab,pos,Quaternion.identity);
+        temp.GetComponent<ItemData>().create(new ItemStack(ItemDataInitializer.read[loot.item.id],loot.minAmount));
+        itemEntityManager.addNewItemEntity(new ItemEntity(temp,pos)); 
+    }
+
+    public void pickItem(GameObject loot)
+    {
+        
+        
     }
 
     public void startGame()

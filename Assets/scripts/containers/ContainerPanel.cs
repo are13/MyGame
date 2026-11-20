@@ -12,7 +12,7 @@ public abstract class ContainerPanel : MonoBehaviour
     public bool hasInit = false;
     public UnityEvent<int> onSelectionClicked;
 
-    public virtual void init(int size)
+    public virtual void init(int size , ItemStorer itemStorer)
     {
         
 

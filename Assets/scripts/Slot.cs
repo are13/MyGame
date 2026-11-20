@@ -22,32 +22,60 @@ public class Slot : MonoBehaviour ,IPointerEnterHandler,IPointerExitHandler,IPoi
         selected.gameObject.SetActive(isSelected);
     }
 
-    public void bind(ItemStorer itemStorer, int idx)
+    public void bind(ItemStorer storer, int slotIndex)
     {
-        if (this.itemStorer != null)
+        if (itemStorer != null)
         {
             itemStorer.onContainerChanged.RemoveListener(updateDisplay);
         }
-        itemStorer.onContainerChanged.AddListener(updateDisplay);
-        this.itemStorer = itemStorer;
-        this.idx = idx;
+
+        itemStorer = storer;
+        idx = slotIndex;
+
+        if (itemStorer != null)
+        {
+            itemStorer.onContainerChanged.AddListener(updateDisplay);
+        }
+
+        updateDisplay(idx);
     }
 
-    public void updateDisplay(int idx)
+    public void updateDisplay(int changedIdx)
     {
+        if (itemStorer == null)
+        {
+            SetEmpty();
+            return;
+        }
+
+        if (changedIdx >= 0 && changedIdx != idx) return;
 
         var temp = itemStorer.getItem(idx);
-        if (temp == null)
+        if (temp == null || temp.amount <= 0)
         {
-
-            icon.gameObject.SetActive(false);
+            SetEmpty();
             return;
         }
 
         icon.gameObject.SetActive(true);
         icon.sprite = temp.item.icon;
-        amount.text = (temp.amount>1)?temp.amount+"":"";
+        amount.text = (temp.amount > 1) ? temp.amount + "" : "";
     }
+
+    void SetEmpty()
+    {
+        icon.gameObject.SetActive(false);
+        amount.text = "";
+    }
+
+    void OnDestroy()
+    {
+        if (itemStorer != null)
+        {
+            itemStorer.onContainerChanged.RemoveListener(updateDisplay);
+        }
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         
@@ -63,7 +91,15 @@ public class Slot : MonoBehaviour ,IPointerEnterHandler,IPointerExitHandler,IPoi
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            if (GameManager.manager != null && GameManager.manager.dragManager != null)
+            {
+                GameManager.manager.dragManager.ReturnHeld();
+            }
+            return;
+        }
+
         notifyClick?.Invoke(idx);
     }
 }

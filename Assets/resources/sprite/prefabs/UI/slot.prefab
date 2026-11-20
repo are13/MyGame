@@ -90,10 +90,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892ba30935aa1044080b87687b74c178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  defaultIcon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   icon: {fileID: 5685505205956701193}
   selected: {fileID: 6282015826535900658}
   amount: {fileID: 1152356567177770667}
+  idx: 0
 --- !u!1 &4440018279960661574
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,8 +279,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.901, y: 2.8202}
-  m_SizeDelta: {x: 10, y: 10}
+  m_AnchoredPosition: {x: 6.5026, y: -11.592}
+  m_SizeDelta: {x: 34.5351, y: 23.184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4564627443349147768
 CanvasRenderer:
@@ -319,8 +319,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4286054144
-  m_fontColor: {r: 0, g: 1, b: 0.46532178, a: 1}
+    rgba: 4278228991
+  m_fontColor: {r: 1, g: 0.5906197, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -337,15 +337,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_fontStyle: 1
+  m_HorizontalAlignment: 4
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -0.93266296, z: 0, w: -12.124786}
+  m_margin: {x: -0.56185913, y: -0.93266296, z: 0.56186676, w: 0.2365017}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

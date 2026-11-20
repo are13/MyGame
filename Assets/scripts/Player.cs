@@ -322,7 +322,7 @@ public class Player : LivingEntity
             ItemData temp = collision.gameObject.GetComponent<ItemData>();
             if (temp.s != null)
             {
-                if (pickItem(temp.s)) Destroy(collision.gameObject);
+                if (pickItem(temp.s)) GameManager.manager.itemEntityManager.removeItemEntity(collision.gameObject);
             }
         }
 
@@ -390,50 +390,6 @@ public class Player : LivingEntity
 
     public bool pickItem(ItemStack itemStack)
     {
-
-        // bool isAllPicked = false;
-        // List<int> firstIn = new List<int>();
-        // for (int i = 0; i < inventorySize; i++)
-        // {
-        //     if (inventory[i] == null)
-        //     {
-
-        //         inventory[i] = itemStack;
-        //         firstIn.Add(i);
-        //         isAllPicked = true;
-        //         firstIn.Add(i);
-        //         break;
-        //     }
-        //     else if (itemStack.item.Equals(inventory[i].item))
-        //     {
-
-        //         int added = inventory[i].amount + itemStack.amount;
-        //         if (added > inventory[i].item.maxStackNum)
-        //         {
-
-        //             int d = inventory[i].item.maxStackNum - inventory[i].amount;
-        //             if (d > 0) firstIn.Add(i);
-        //             itemStack.amount -= d;
-        //             inventory[i].amount = inventory[i].item.maxStackNum;
-        //         }
-        //         else
-        //         {
-        //             inventory[i].amount += itemStack.amount;
-        //             isAllPicked = true;
-        //             firstIn.Add(i);
-        //             break;
-        //         }
-        //     }
-        // }
-
-        // if (firstIn.Count > 0)
-        // {
-
-        //     onPlayerInventoryChange?.Invoke(inventory, firstIn);
-        //     // inventoryUI.updateDisplay(inventory,firstIn);
-        // }
-
-        // return isAllPicked;
         return storer.addItem(itemStack);
     }
 
